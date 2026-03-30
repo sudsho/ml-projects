@@ -1,20 +1,19 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
+  "current_project": {
+    "name": "titanic-survival-prediction",
+    "title": "Titanic Survival Prediction",
+    "description": "Classic ML classification on Titanic dataset with EDA, feature engineering, and model comparison",
+    "total_days": 4,
+    "daily_plan": [
+      "Initial EDA and data loading with visualizations",
+      "Feature engineering and data preprocessing",
+      "Model training - Logistic Regression, Random Forest, XGBoost comparison",
+      "Hyperparameter tuning, final evaluation, and project README"
+    ]
+  },
+  "current_project_day": 1,
   "completed_projects": [],
   "project_queue": [
-    {
-      "name": "titanic-survival-prediction",
-      "title": "Titanic Survival Prediction",
-      "description": "Classic ML classification on Titanic dataset with EDA, feature engineering, and model comparison",
-      "total_days": 4,
-      "daily_plan": [
-        "Initial EDA and data loading with visualizations",
-        "Feature engineering and data preprocessing",
-        "Model training - Logistic Regression, Random Forest, XGBoost comparison",
-        "Hyperparameter tuning, final evaluation, and project README"
-      ]
-    },
     {
       "name": "sentiment-analysis-reviews",
       "title": "Sentiment Analysis on Product Reviews",

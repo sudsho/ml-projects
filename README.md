@@ -4,7 +4,9 @@ Collection of machine learning and data science projects exploring different tec
 
 ## Projects
 
-*Projects will be added as I work through different ML concepts and datasets.*
+| Project | Description | Status |
+|---------|-------------|--------|
+| [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | 🔄 In Progress |
 
 ## Tech Stack
 
