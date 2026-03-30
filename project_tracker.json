@@ -1,0 +1,129 @@
+{
+  "current_project": null,
+  "current_project_day": 0,
+  "completed_projects": [],
+  "project_queue": [
+    {
+      "name": "titanic-survival-prediction",
+      "title": "Titanic Survival Prediction",
+      "description": "Classic ML classification on Titanic dataset with EDA, feature engineering, and model comparison",
+      "total_days": 4,
+      "daily_plan": [
+        "Initial EDA and data loading with visualizations",
+        "Feature engineering and data preprocessing",
+        "Model training - Logistic Regression, Random Forest, XGBoost comparison",
+        "Hyperparameter tuning, final evaluation, and project README"
+      ]
+    },
+    {
+      "name": "sentiment-analysis-reviews",
+      "title": "Sentiment Analysis on Product Reviews",
+      "description": "NLP project using TF-IDF and deep learning for sentiment classification",
+      "total_days": 5,
+      "daily_plan": [
+        "Data collection and initial text preprocessing",
+        "EDA - word clouds, distribution analysis, text statistics",
+        "TF-IDF + traditional ML models (Naive Bayes, SVM)",
+        "LSTM/Transformer-based approach with PyTorch",
+        "Model comparison, evaluation metrics, and final README"
+      ]
+    },
+    {
+      "name": "house-price-prediction",
+      "title": "House Price Prediction",
+      "description": "Regression project with advanced feature engineering on housing data",
+      "total_days": 4,
+      "daily_plan": [
+        "Dataset loading, EDA with correlation analysis and visualizations",
+        "Feature engineering - encoding, scaling, feature selection",
+        "Model training - Linear Regression, Ridge, Lasso, Gradient Boosting",
+        "Ensemble methods, final evaluation, and project documentation"
+      ]
+    },
+    {
+      "name": "image-classification-cifar",
+      "title": "Image Classification with CNNs",
+      "description": "Deep learning project building CNN from scratch and transfer learning on CIFAR-10",
+      "total_days": 5,
+      "daily_plan": [
+        "Data loading, exploration, and basic augmentation setup",
+        "Build CNN from scratch with PyTorch",
+        "Training loop, loss curves, and initial results",
+        "Transfer learning with ResNet - fine-tuning approach",
+        "Comparison, confusion matrix, grad-CAM visualization, README"
+      ]
+    },
+    {
+      "name": "customer-segmentation",
+      "title": "Customer Segmentation with Clustering",
+      "description": "Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data",
+      "total_days": 4,
+      "daily_plan": [
+        "Data loading and exploratory data analysis",
+        "Feature scaling and dimensionality reduction with PCA",
+        "K-Means with elbow method, silhouette analysis",
+        "DBSCAN comparison, cluster profiling, and visualization"
+      ]
+    },
+    {
+      "name": "time-series-stock-prediction",
+      "title": "Stock Price Forecasting",
+      "description": "Time series analysis with ARIMA, Prophet, and LSTM",
+      "total_days": 5,
+      "daily_plan": [
+        "Data fetching, time series EDA, stationarity tests",
+        "ARIMA/SARIMA modeling and diagnostics",
+        "Facebook Prophet implementation and comparison",
+        "LSTM approach with PyTorch for sequence prediction",
+        "Model comparison, backtesting results, and documentation"
+      ]
+    },
+    {
+      "name": "recommendation-system",
+      "title": "Movie Recommendation System",
+      "description": "Collaborative filtering and content-based recommendations",
+      "total_days": 4,
+      "daily_plan": [
+        "MovieLens data loading, EDA, rating distribution analysis",
+        "Content-based filtering with TF-IDF on movie descriptions",
+        "Collaborative filtering - user-based and item-based approaches",
+        "Matrix factorization with SVD, evaluation, and final README"
+      ]
+    },
+    {
+      "name": "fraud-detection",
+      "title": "Credit Card Fraud Detection",
+      "description": "Imbalanced classification with SMOTE, anomaly detection techniques",
+      "total_days": 4,
+      "daily_plan": [
+        "Data loading, severe class imbalance analysis and visualization",
+        "Handling imbalance - SMOTE, undersampling, class weights",
+        "Model training - Isolation Forest, Random Forest, XGBoost",
+        "Precision-recall analysis, threshold tuning, and documentation"
+      ]
+    },
+    {
+      "name": "text-summarization",
+      "title": "Extractive & Abstractive Text Summarization",
+      "description": "NLP project comparing traditional and transformer-based summarization",
+      "total_days": 4,
+      "daily_plan": [
+        "Dataset preparation and text preprocessing pipeline",
+        "Extractive summarization with TextRank algorithm",
+        "Abstractive summarization using pre-trained transformers",
+        "ROUGE evaluation, comparison, and project documentation"
+      ]
+    },
+    {
+      "name": "ab-testing-analysis",
+      "title": "A/B Testing Statistical Analysis",
+      "description": "End-to-end A/B test analysis with power analysis, hypothesis testing, and Bayesian approach",
+      "total_days": 3,
+      "daily_plan": [
+        "Sample size calculation, power analysis, experiment design",
+        "Frequentist hypothesis testing - t-tests, chi-square, bootstrap",
+        "Bayesian A/B testing approach, visualization, and conclusions"
+      ]
+    }
+  ]
+}
