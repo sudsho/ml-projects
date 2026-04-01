@@ -6,7 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | 🔄 In Progress |
+| [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | ✅ Complete |
 
 ## Tech Stack
 
