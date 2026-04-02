@@ -1,32 +1,33 @@
 {
   "current_project": {
-    "name": "titanic-survival-prediction",
-    "title": "Titanic Survival Prediction",
-    "description": "Classic ML classification on Titanic dataset with EDA, feature engineering, and model comparison",
-    "total_days": 4,
+    "name": "sentiment-analysis-reviews",
+    "title": "Sentiment Analysis on Product Reviews",
+    "description": "NLP project using TF-IDF and deep learning for sentiment classification",
+    "total_days": 5,
     "daily_plan": [
-      "Initial EDA and data loading with visualizations",
-      "Feature engineering and data preprocessing",
-      "Model training - Logistic Regression, Random Forest, XGBoost comparison",
-      "Hyperparameter tuning, final evaluation, and project README"
+      "Data collection and initial text preprocessing",
+      "EDA - word clouds, distribution analysis, text statistics",
+      "TF-IDF + traditional ML models (Naive Bayes, SVM)",
+      "LSTM/Transformer-based approach with PyTorch",
+      "Model comparison, evaluation metrics, and final README"
     ]
   },
-  "current_project_day": 4,
-  "completed_projects": [],
-  "project_queue": [
+  "current_project_day": 1,
+  "completed_projects": [
     {
-      "name": "sentiment-analysis-reviews",
-      "title": "Sentiment Analysis on Product Reviews",
-      "description": "NLP project using TF-IDF and deep learning for sentiment classification",
-      "total_days": 5,
+      "name": "titanic-survival-prediction",
+      "title": "Titanic Survival Prediction",
+      "description": "Classic ML classification on Titanic dataset with EDA, feature engineering, and model comparison",
+      "total_days": 4,
       "daily_plan": [
-        "Data collection and initial text preprocessing",
-        "EDA - word clouds, distribution analysis, text statistics",
-        "TF-IDF + traditional ML models (Naive Bayes, SVM)",
-        "LSTM/Transformer-based approach with PyTorch",
-        "Model comparison, evaluation metrics, and final README"
+        "Initial EDA and data loading with visualizations",
+        "Feature engineering and data preprocessing",
+        "Model training - Logistic Regression, Random Forest, XGBoost comparison",
+        "Hyperparameter tuning, final evaluation, and project README"
       ]
-    },
+    }
+  ],
+  "project_queue": [
     {
       "name": "house-price-prediction",
       "title": "House Price Prediction",
