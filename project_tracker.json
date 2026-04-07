@@ -1,18 +1,17 @@
 {
   "current_project": {
-    "name": "sentiment-analysis-reviews",
-    "title": "Sentiment Analysis on Product Reviews",
-    "description": "NLP project using TF-IDF and deep learning for sentiment classification",
-    "total_days": 5,
+    "name": "house-price-prediction",
+    "title": "House Price Prediction",
+    "description": "Regression project with advanced feature engineering on housing data",
+    "total_days": 4,
     "daily_plan": [
-      "Data collection and initial text preprocessing",
-      "EDA - word clouds, distribution analysis, text statistics",
-      "TF-IDF + traditional ML models (Naive Bayes, SVM)",
-      "LSTM/Transformer-based approach with PyTorch",
-      "Model comparison, evaluation metrics, and final README"
+      "Dataset loading, EDA with correlation analysis and visualizations",
+      "Feature engineering - encoding, scaling, feature selection",
+      "Model training - Linear Regression, Ridge, Lasso, Gradient Boosting",
+      "Ensemble methods, final evaluation, and project documentation"
     ]
   },
-  "current_project_day": 5,
+  "current_project_day": 1,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -25,21 +24,22 @@
         "Model training - Logistic Regression, Random Forest, XGBoost comparison",
         "Hyperparameter tuning, final evaluation, and project README"
       ]
+    },
+    {
+      "name": "sentiment-analysis-reviews",
+      "title": "Sentiment Analysis on Product Reviews",
+      "description": "NLP project using TF-IDF and deep learning for sentiment classification",
+      "total_days": 5,
+      "daily_plan": [
+        "Data collection and initial text preprocessing",
+        "EDA - word clouds, distribution analysis, text statistics",
+        "TF-IDF + traditional ML models (Naive Bayes, SVM)",
+        "LSTM/Transformer-based approach with PyTorch",
+        "Model comparison, evaluation metrics, and final README"
+      ]
     }
   ],
   "project_queue": [
-    {
-      "name": "house-price-prediction",
-      "title": "House Price Prediction",
-      "description": "Regression project with advanced feature engineering on housing data",
-      "total_days": 4,
-      "daily_plan": [
-        "Dataset loading, EDA with correlation analysis and visualizations",
-        "Feature engineering - encoding, scaling, feature selection",
-        "Model training - Linear Regression, Ridge, Lasso, Gradient Boosting",
-        "Ensemble methods, final evaluation, and project documentation"
-      ]
-    },
     {
       "name": "image-classification-cifar",
       "title": "Image Classification with CNNs",
