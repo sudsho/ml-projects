@@ -8,7 +8,8 @@ Collection of machine learning and data science projects exploring different tec
 |---------|-------------|--------|
 | [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | ✅ Complete |
 | [Sentiment Analysis on Product Reviews](./sentiment-analysis-reviews/) | NLP project using TF-IDF and deep learning for sentiment classification | ✅ Complete |
-| [House Price Prediction](./house-price-prediction/) | Regression with advanced feature engineering on California Housing data | 🔄 In Progress |
+| [House Price Prediction](./house-price-prediction/) | Regression with advanced feature engineering on California Housing data | ✅ Complete |
+| [Image Classification with CNNs](./image-classification-cifar/) | Deep learning - CNN from scratch and transfer learning on CIFAR-10 | 🔄 In Progress |
 
 ## Tech Stack
 
