@@ -1,18 +1,17 @@
 {
   "current_project": {
-    "name": "image-classification-cifar",
-    "title": "Image Classification with CNNs",
-    "description": "Deep learning project building CNN from scratch and transfer learning on CIFAR-10",
-    "total_days": 5,
+    "name": "customer-segmentation",
+    "title": "Customer Segmentation with Clustering",
+    "description": "Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data",
+    "total_days": 4,
     "daily_plan": [
-      "Data loading, exploration, and basic augmentation setup",
-      "Build CNN from scratch with PyTorch",
-      "Training loop, loss curves, and initial results",
-      "Transfer learning with ResNet - fine-tuning approach",
-      "Comparison, confusion matrix, grad-CAM visualization, README"
+      "Data loading and exploratory data analysis",
+      "Feature scaling and dimensionality reduction with PCA",
+      "K-Means with elbow method, silhouette analysis",
+      "DBSCAN comparison, cluster profiling, and visualization"
     ]
   },
-  "current_project_day": 5,
+  "current_project_day": 1,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -50,21 +49,22 @@
         "Model training - Linear Regression, Ridge, Lasso, Gradient Boosting",
         "Ensemble methods, final evaluation, and project documentation"
       ]
+    },
+    {
+      "name": "image-classification-cifar",
+      "title": "Image Classification with CNNs",
+      "description": "Deep learning project building CNN from scratch and transfer learning on CIFAR-10",
+      "total_days": 5,
+      "daily_plan": [
+        "Data loading, exploration, and basic augmentation setup",
+        "Build CNN from scratch with PyTorch",
+        "Training loop, loss curves, and initial results",
+        "Transfer learning with ResNet - fine-tuning approach",
+        "Comparison, confusion matrix, grad-CAM visualization, README"
+      ]
     }
   ],
   "project_queue": [
-    {
-      "name": "customer-segmentation",
-      "title": "Customer Segmentation with Clustering",
-      "description": "Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data",
-      "total_days": 4,
-      "daily_plan": [
-        "Data loading and exploratory data analysis",
-        "Feature scaling and dimensionality reduction with PCA",
-        "K-Means with elbow method, silhouette analysis",
-        "DBSCAN comparison, cluster profiling, and visualization"
-      ]
-    },
     {
       "name": "time-series-stock-prediction",
       "title": "Stock Price Forecasting",

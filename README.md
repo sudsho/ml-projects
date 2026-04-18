@@ -10,6 +10,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Sentiment Analysis on Product Reviews](./sentiment-analysis-reviews/) | NLP project using TF-IDF and deep learning for sentiment classification | ✅ Complete |
 | [House Price Prediction](./house-price-prediction/) | Regression with advanced feature engineering on California Housing data | ✅ Complete |
 | [Image Classification with CNNs](./image-classification-cifar/) | Deep learning - CNN from scratch and transfer learning on CIFAR-10 | ✅ Complete |
+| [Customer Segmentation with Clustering](./customer-segmentation/) | Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data | 🔄 In Progress |
 
 ## Tech Stack
 
