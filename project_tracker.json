@@ -1,17 +1,6 @@
 {
-  "current_project": {
-    "name": "customer-segmentation",
-    "title": "Customer Segmentation with Clustering",
-    "description": "Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data",
-    "total_days": 4,
-    "daily_plan": [
-      "Data loading and exploratory data analysis",
-      "Feature scaling and dimensionality reduction with PCA",
-      "K-Means with elbow method, silhouette analysis",
-      "DBSCAN comparison, cluster profiling, and visualization"
-    ]
-  },
-  "current_project_day": 3,
+  "current_project": null,
+  "current_project_day": 0,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -61,6 +50,18 @@
         "Training loop, loss curves, and initial results",
         "Transfer learning with ResNet - fine-tuning approach",
         "Comparison, confusion matrix, grad-CAM visualization, README"
+      ]
+    },
+    {
+      "name": "customer-segmentation",
+      "title": "Customer Segmentation with Clustering",
+      "description": "Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data",
+      "total_days": 4,
+      "daily_plan": [
+        "Data loading and exploratory data analysis",
+        "Feature scaling and dimensionality reduction with PCA",
+        "K-Means with elbow method, silhouette analysis",
+        "DBSCAN comparison, cluster profiling, and visualization"
       ]
     }
   ],
