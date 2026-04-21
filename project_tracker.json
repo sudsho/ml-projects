@@ -1,6 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
+  "current_project": {
+    "name": "time-series-stock-prediction",
+    "title": "Stock Price Forecasting",
+    "description": "Time series analysis with ARIMA, Prophet, and LSTM",
+    "total_days": 5,
+    "daily_plan": [
+      "Data fetching, time series EDA, stationarity tests",
+      "ARIMA/SARIMA modeling and diagnostics",
+      "Facebook Prophet implementation and comparison",
+      "LSTM approach with PyTorch for sequence prediction",
+      "Model comparison, backtesting results, and documentation"
+    ]
+  },
+  "current_project_day": 1,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -66,19 +78,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "time-series-stock-prediction",
-      "title": "Stock Price Forecasting",
-      "description": "Time series analysis with ARIMA, Prophet, and LSTM",
-      "total_days": 5,
-      "daily_plan": [
-        "Data fetching, time series EDA, stationarity tests",
-        "ARIMA/SARIMA modeling and diagnostics",
-        "Facebook Prophet implementation and comparison",
-        "LSTM approach with PyTorch for sequence prediction",
-        "Model comparison, backtesting results, and documentation"
-      ]
-    },
     {
       "name": "recommendation-system",
       "title": "Movie Recommendation System",

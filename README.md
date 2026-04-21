@@ -11,6 +11,7 @@ Collection of machine learning and data science projects exploring different tec
 | [House Price Prediction](./house-price-prediction/) | Regression with advanced feature engineering on California Housing data | ✅ Complete |
 | [Image Classification with CNNs](./image-classification-cifar/) | Deep learning - CNN from scratch and transfer learning on CIFAR-10 | ✅ Complete |
 | [Customer Segmentation with Clustering](./customer-segmentation/) | Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data | ✅ Complete |
+| [Stock Price Forecasting](./time-series-stock-prediction/) | Time series analysis with ARIMA, Prophet, and LSTM for stock price prediction | 🔄 In Progress |
 
 ## Tech Stack
 
