@@ -13,6 +13,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Customer Segmentation with Clustering](./customer-segmentation/) | Unsupervised learning - K-Means, DBSCAN, hierarchical clustering on customer data | ✅ Complete |
 | [Stock Price Forecasting](./time-series-stock-prediction/) | Time series analysis with ARIMA, Prophet, and LSTM for stock price prediction | ✅ Complete |
 | [Movie Recommendation System](./recommendation-system/) | Collaborative filtering and content-based recommendations on MovieLens | ✅ Complete |
+| [Credit Card Fraud Detection](./fraud-detection/) | Imbalanced classification with SMOTE and anomaly detection techniques | 🔄 In Progress |
 
 ## Tech Stack
 

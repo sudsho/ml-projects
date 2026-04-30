@@ -1,6 +1,17 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
+  "current_project": {
+    "name": "fraud-detection",
+    "title": "Credit Card Fraud Detection",
+    "description": "Imbalanced classification with SMOTE, anomaly detection techniques",
+    "total_days": 4,
+    "daily_plan": [
+      "Data loading, severe class imbalance analysis and visualization",
+      "Handling imbalance - SMOTE, undersampling, class weights",
+      "Model training - Isolation Forest, Random Forest, XGBoost",
+      "Precision-recall analysis, threshold tuning, and documentation"
+    ]
+  },
+  "current_project_day": 1,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -91,18 +102,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "fraud-detection",
-      "title": "Credit Card Fraud Detection",
-      "description": "Imbalanced classification with SMOTE, anomaly detection techniques",
-      "total_days": 4,
-      "daily_plan": [
-        "Data loading, severe class imbalance analysis and visualization",
-        "Handling imbalance - SMOTE, undersampling, class weights",
-        "Model training - Isolation Forest, Random Forest, XGBoost",
-        "Precision-recall analysis, threshold tuning, and documentation"
-      ]
-    },
     {
       "name": "text-summarization",
       "title": "Extractive & Abstractive Text Summarization",
