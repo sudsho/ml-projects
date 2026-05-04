@@ -14,6 +14,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Stock Price Forecasting](./time-series-stock-prediction/) | Time series analysis with ARIMA, Prophet, and LSTM for stock price prediction | ✅ Complete |
 | [Movie Recommendation System](./recommendation-system/) | Collaborative filtering and content-based recommendations on MovieLens | ✅ Complete |
 | [Credit Card Fraud Detection](./fraud-detection/) | Imbalanced classification with SMOTE and anomaly detection techniques | ✅ Complete |
+| [Extractive & Abstractive Text Summarization](./text-summarization/) | NLP project comparing TextRank and transformer-based summarization | 🔄 In Progress |
 
 ## Tech Stack
 

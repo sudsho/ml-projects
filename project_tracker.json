@@ -1,17 +1,17 @@
 {
   "current_project": {
-    "name": "fraud-detection",
-    "title": "Credit Card Fraud Detection",
-    "description": "Imbalanced classification with SMOTE, anomaly detection techniques",
+    "name": "text-summarization",
+    "title": "Extractive & Abstractive Text Summarization",
+    "description": "NLP project comparing traditional and transformer-based summarization",
     "total_days": 4,
     "daily_plan": [
-      "Data loading, severe class imbalance analysis and visualization",
-      "Handling imbalance - SMOTE, undersampling, class weights",
-      "Model training - Isolation Forest, Random Forest, XGBoost",
-      "Precision-recall analysis, threshold tuning, and documentation"
+      "Dataset preparation and text preprocessing pipeline",
+      "Extractive summarization with TextRank algorithm",
+      "Abstractive summarization using pre-trained transformers",
+      "ROUGE evaluation, comparison, and project documentation"
     ]
   },
-  "current_project_day": 4,
+  "current_project_day": 1,
   "completed_projects": [
     {
       "name": "titanic-survival-prediction",
@@ -99,21 +99,21 @@
         "Collaborative filtering - user-based and item-based approaches",
         "Matrix factorization with SVD, evaluation, and final README"
       ]
+    },
+    {
+      "name": "fraud-detection",
+      "title": "Credit Card Fraud Detection",
+      "description": "Imbalanced classification with SMOTE, anomaly detection techniques",
+      "total_days": 4,
+      "daily_plan": [
+        "Data loading, severe class imbalance analysis and visualization",
+        "Handling imbalance - SMOTE, undersampling, class weights",
+        "Model training - Isolation Forest, Random Forest, XGBoost",
+        "Precision-recall analysis, threshold tuning, and documentation"
+      ]
     }
   ],
   "project_queue": [
-    {
-      "name": "text-summarization",
-      "title": "Extractive & Abstractive Text Summarization",
-      "description": "NLP project comparing traditional and transformer-based summarization",
-      "total_days": 4,
-      "daily_plan": [
-        "Dataset preparation and text preprocessing pipeline",
-        "Extractive summarization with TextRank algorithm",
-        "Abstractive summarization using pre-trained transformers",
-        "ROUGE evaluation, comparison, and project documentation"
-      ]
-    },
     {
       "name": "ab-testing-analysis",
       "title": "A/B Testing Statistical Analysis",
