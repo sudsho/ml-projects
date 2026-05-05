@@ -75,6 +75,9 @@ def basic_stats(df: pd.DataFrame) -> dict:
 
 
 def build_vocab(texts, min_count: int = 5) -> dict:
+    """Build a word->index vocab over the corpus, skipping pure-punctuation
+    tokens and any word seen fewer than ``min_count`` times. Indices are
+    assigned by descending frequency, so common words get low ids."""
     counter = Counter()
     for t in texts:
         counter.update(w.lower() for w in word_tokenize(t) if w not in string.punctuation)
