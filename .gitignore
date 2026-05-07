@@ -29,10 +29,15 @@ data/processed/
 *.pth
 *.bin
 *.onnx
+*.safetensors
 checkpoints/
 runs/
 mlruns/
 wandb/
+
+# Per-project eval outputs
+text-summarization/results/
+*/results/
 
 # IDE / editor
 .vscode/
