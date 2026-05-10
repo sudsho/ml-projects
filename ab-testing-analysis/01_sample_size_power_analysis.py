@@ -56,7 +56,14 @@ def power_curve(p1, p2_range, n, alpha=0.05):
 
 
 def simulate_experiment(n_per_group, p_control, p_treatment, seed=RANDOM_STATE):
-    """Generate a synthetic A/B experiment with conversion + revenue per user."""
+    """Generate a synthetic A/B experiment with conversion + revenue per user.
+
+    Returns a shuffled DataFrame with columns:
+      user_id   - unique integer id
+      variant   - "control" or "treatment"
+      converted - 0/1 outcome from a Bernoulli draw
+      revenue   - 0 if not converted, else gamma-distributed AOV
+    """
     rng = np.random.default_rng(seed)
     control = rng.binomial(1, p_control, n_per_group)
     treatment = rng.binomial(1, p_treatment, n_per_group)
