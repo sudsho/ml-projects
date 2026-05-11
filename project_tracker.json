@@ -1,17 +1,18 @@
 {
-  "current_project": {
-    "name": "ab-testing-analysis",
-    "title": "A/B Testing Statistical Analysis",
-    "description": "End-to-end A/B test analysis with power analysis, hypothesis testing, and Bayesian approach",
-    "total_days": 3,
-    "daily_plan": [
-      "Sample size calculation, power analysis, experiment design",
-      "Frequentist hypothesis testing - t-tests, chi-square, bootstrap",
-      "Bayesian A/B testing approach, visualization, and conclusions"
-    ]
-  },
-  "current_project_day": 2,
+  "current_project": null,
+  "current_project_day": 0,
   "completed_projects": [
+    {
+      "name": "ab-testing-analysis",
+      "title": "A/B Testing Statistical Analysis",
+      "description": "End-to-end A/B test analysis with power analysis, hypothesis testing, and Bayesian approach",
+      "total_days": 3,
+      "daily_plan": [
+        "Sample size calculation, power analysis, experiment design",
+        "Frequentist hypothesis testing - t-tests, chi-square, bootstrap",
+        "Bayesian A/B testing approach, visualization, and conclusions"
+      ]
+    },
     {
       "name": "titanic-survival-prediction",
       "title": "Titanic Survival Prediction",
