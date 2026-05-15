@@ -38,6 +38,8 @@ wandb/
 # Per-project eval outputs
 text-summarization/results/
 */results/
+neural-style-transfer/outputs/
+neural-style-transfer/inputs/
 
 # IDE / editor
 .vscode/
