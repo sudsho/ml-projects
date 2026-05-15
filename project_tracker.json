@@ -1,17 +1,6 @@
 {
-  "current_project": {
-    "name": "neural-style-transfer",
-    "title": "Neural Style Transfer with PyTorch",
-    "description": "Gatys-style neural style transfer using pretrained VGG19 feature maps",
-    "total_days": 4,
-    "daily_plan": [
-      "Load VGG19, build image preprocessing pipeline, extract intermediate feature maps",
-      "Content and style loss with Gram matrices, total variation regularization",
-      "Optimization loop with L-BFGS, learning rate schedule, intermediate snapshots",
-      "Multi-style blending experiments, comparison grid, final project README"
-    ]
-  },
-  "current_project_day": 3,
+  "current_project": null,
+  "current_project_day": 0,
   "completed_projects": [
     {
       "name": "ab-testing-analysis",
@@ -133,6 +122,18 @@
         "Extractive summarization with TextRank algorithm",
         "Abstractive summarization using pre-trained transformers",
         "ROUGE evaluation, comparison, and project documentation"
+      ]
+    },
+    {
+      "name": "neural-style-transfer",
+      "title": "Neural Style Transfer with PyTorch",
+      "description": "Gatys-style neural style transfer using pretrained VGG19 feature maps",
+      "total_days": 4,
+      "daily_plan": [
+        "Load VGG19, build image preprocessing pipeline, extract intermediate feature maps",
+        "Content and style loss with Gram matrices, total variation regularization",
+        "Optimization loop with L-BFGS, learning rate schedule, intermediate snapshots",
+        "Multi-style blending experiments, comparison grid, final project README"
       ]
     }
   ],

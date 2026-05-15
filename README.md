@@ -16,7 +16,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Credit Card Fraud Detection](./fraud-detection/) | Imbalanced classification with SMOTE and anomaly detection techniques | ✅ Complete |
 | [Extractive & Abstractive Text Summarization](./text-summarization/) | NLP project comparing TextRank and transformer-based summarization | ✅ Complete |
 | [A/B Testing Statistical Analysis](./ab-testing-analysis/) | End-to-end A/B test analysis with power analysis, hypothesis testing, and Bayesian approach | ✅ Complete |
-| [Neural Style Transfer with PyTorch](./neural-style-transfer/) | Gatys-style neural style transfer using pretrained VGG19 feature maps | 🔄 In Progress |
+| [Neural Style Transfer with PyTorch](./neural-style-transfer/) | Gatys-style neural style transfer using pretrained VGG19 feature maps | ✅ Complete |
 
 ## Tech Stack
 
