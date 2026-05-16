@@ -45,4 +45,6 @@ neural-style-transfer/inputs/
 .vscode/
 .idea/
 *.swp
+*.swo
 .DS_Store
+Thumbs.db
