@@ -40,6 +40,8 @@ text-summarization/results/
 */results/
 neural-style-transfer/outputs/
 neural-style-transfer/inputs/
+graph-neural-networks-cora/data/
+graph-neural-networks-cora/*.png
 
 # IDE / editor
 .vscode/
