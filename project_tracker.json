@@ -1,18 +1,19 @@
 {
-  "current_project": {
-    "name": "graph-neural-networks-cora",
-    "title": "Graph Neural Networks for Node Classification (Cora)",
-    "description": "Node classification on the Cora citation network with GCN built from scratch, plus GraphSAGE and GAT baselines",
-    "total_days": 4,
-    "daily_plan": [
-      "Cora dataset loading, citation graph EDA, degree distribution and class balance",
-      "Build GCN layer from scratch in PyTorch with normalized adjacency",
-      "Training loop, validation accuracy, dropout and weight decay tuning",
-      "GraphSAGE and GAT baselines, t-SNE on learned embeddings, project README"
-    ]
-  },
-  "current_project_day": 3,
+  "current_project": null,
+  "current_project_day": 0,
   "completed_projects": [
+    {
+      "name": "graph-neural-networks-cora",
+      "title": "Graph Neural Networks for Node Classification (Cora)",
+      "description": "Node classification on the Cora citation network with GCN built from scratch, plus GraphSAGE and GAT baselines",
+      "total_days": 4,
+      "daily_plan": [
+        "Cora dataset loading, citation graph EDA, degree distribution and class balance",
+        "Build GCN layer from scratch in PyTorch with normalized adjacency",
+        "Training loop, validation accuracy, dropout and weight decay tuning",
+        "GraphSAGE and GAT baselines, t-SNE on learned embeddings, project README"
+      ]
+    },
     {
       "name": "ab-testing-analysis",
       "title": "A/B Testing Statistical Analysis",

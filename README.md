@@ -17,7 +17,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Extractive & Abstractive Text Summarization](./text-summarization/) | NLP project comparing TextRank and transformer-based summarization | ✅ Complete |
 | [A/B Testing Statistical Analysis](./ab-testing-analysis/) | End-to-end A/B test analysis with power analysis, hypothesis testing, and Bayesian approach | ✅ Complete |
 | [Neural Style Transfer with PyTorch](./neural-style-transfer/) | Gatys-style neural style transfer using pretrained VGG19 feature maps | ✅ Complete |
-| [Graph Neural Networks for Node Classification (Cora)](./graph-neural-networks-cora/) | Node classification on Cora citation network with GCN from scratch, GraphSAGE, GAT | 🔄 In Progress |
+| [Graph Neural Networks for Node Classification (Cora)](./graph-neural-networks-cora/) | Node classification on Cora citation network with GCN from scratch, GraphSAGE, GAT | ✅ Complete |
 
 ## Tech Stack
 
