@@ -1,6 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
+  "current_project": "reinforcement-learning-dqn",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "reinforcement-learning-dqn",
+    "title": "Reinforcement Learning with DQN on CartPole",
+    "description": "DQN agent on CartPole-v1 - environment exploration, Q-network and replay buffer, training loop with target network, then Double DQN comparison",
+    "total_days": 4,
+    "daily_plan": [
+      "Explore gymnasium CartPole env, random-action baseline, sanity-check obs/action spaces",
+      "Q-network architecture in PyTorch and replay buffer implementation with tests",
+      "DQN training loop with epsilon-greedy schedule and target network sync",
+      "Double DQN variant, evaluation curves, comparison plot, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "graph-neural-networks-cora",
