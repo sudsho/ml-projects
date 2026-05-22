@@ -42,6 +42,8 @@ neural-style-transfer/outputs/
 neural-style-transfer/inputs/
 graph-neural-networks-cora/data/
 graph-neural-networks-cora/*.png
+reinforcement-learning-dqn/videos/
+reinforcement-learning-dqn/*.mp4
 
 # IDE / editor
 .vscode/
