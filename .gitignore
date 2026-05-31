@@ -44,6 +44,8 @@ graph-neural-networks-cora/data/
 graph-neural-networks-cora/*.png
 reinforcement-learning-dqn/videos/
 reinforcement-learning-dqn/*.mp4
+variational-autoencoder-mnist/data/
+variational-autoencoder-mnist/samples/
 
 # IDE / editor
 .vscode/
