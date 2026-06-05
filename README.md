@@ -19,7 +19,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Neural Style Transfer with PyTorch](./neural-style-transfer/) | Gatys-style neural style transfer using pretrained VGG19 feature maps | ✅ Complete |
 | [Graph Neural Networks for Node Classification (Cora)](./graph-neural-networks-cora/) | Node classification on Cora citation network with GCN from scratch, GraphSAGE, GAT | ✅ Complete |
 | [Reinforcement Learning with DQN on CartPole](./reinforcement-learning-dqn/) | DQN agent on CartPole-v1 - Q-network, replay buffer, target net, Double DQN comparison | ✅ Complete |
-| [Variational Autoencoder on MNIST](./variational-autoencoder-mnist/) | VAE from scratch in PyTorch - vanilla AE baseline, reparameterization, latent traversals | 🔄 In Progress |
+| [Variational Autoencoder on MNIST](./variational-autoencoder-mnist/) | VAE from scratch in PyTorch - vanilla AE baseline, reparameterization, latent traversals | ✅ Complete |
 
 ## Tech Stack
 

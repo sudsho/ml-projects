@@ -1,19 +1,20 @@
 {
-  "current_project": "variational-autoencoder-mnist",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "variational-autoencoder-mnist",
-    "title": "Variational Autoencoder on MNIST",
-    "description": "Build a VAE from scratch in PyTorch on MNIST - vanilla AE baseline, reparameterization trick and ELBO, then latent traversal and sampling experiments",
-    "total_days": 4,
-    "daily_plan": [
-      "MNIST dataloaders and a vanilla (non-variational) autoencoder baseline for reconstruction quality",
-      "VAE encoder/decoder with reparameterization trick, ELBO loss (BCE + KL), and a training loop",
-      "Beta-VAE comparison, KL annealing schedule experiments, reconstruction vs KL tradeoff plot",
-      "Latent traversals, random sampling from prior, t-SNE on encoded digits, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "variational-autoencoder-mnist",
+      "title": "Variational Autoencoder on MNIST",
+      "description": "Build a VAE from scratch in PyTorch on MNIST - vanilla AE baseline, reparameterization trick and ELBO, then latent traversal and sampling experiments",
+      "total_days": 4,
+      "daily_plan": [
+        "MNIST dataloaders and a vanilla (non-variational) autoencoder baseline for reconstruction quality",
+        "VAE encoder/decoder with reparameterization trick, ELBO loss (BCE + KL), and a training loop",
+        "Beta-VAE comparison, KL annealing schedule experiments, reconstruction vs KL tradeoff plot",
+        "Latent traversals, random sampling from prior, t-SNE on encoded digits, project README"
+      ]
+    },
     {
       "name": "reinforcement-learning-dqn",
       "title": "Reinforcement Learning with DQN on CartPole",
