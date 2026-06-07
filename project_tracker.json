@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "diffusion-models-mnist",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "diffusion-models-mnist",
+    "title": "Denoising Diffusion Model on MNIST",
+    "description": "Build a DDPM from scratch in PyTorch on MNIST - forward noising schedule with closed-form sampling, a small U-Net noise predictor, training on the simplified loss, then ancestral sampling and a noise-schedule comparison",
+    "total_days": 4,
+    "daily_plan": [
+      "Forward diffusion process - linear and cosine beta schedules, closed-form q(x_t|x_0), visualize progressive noising of MNIST digits",
+      "U-Net noise predictor with sinusoidal timestep embeddings and residual blocks",
+      "Training loop on the simplified DDPM loss with EMA of model weights",
+      "Ancestral sampling, cosine vs linear schedule comparison, sample grid, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "variational-autoencoder-mnist",
