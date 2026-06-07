@@ -46,6 +46,8 @@ reinforcement-learning-dqn/videos/
 reinforcement-learning-dqn/*.mp4
 variational-autoencoder-mnist/data/
 variational-autoencoder-mnist/samples/
+diffusion-models-mnist/data/
+diffusion-models-mnist/samples/
 
 # IDE / editor
 .vscode/
