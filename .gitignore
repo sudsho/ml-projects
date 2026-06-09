@@ -48,6 +48,7 @@ variational-autoencoder-mnist/data/
 variational-autoencoder-mnist/samples/
 diffusion-models-mnist/data/
 diffusion-models-mnist/samples/
+diffusion-models-mnist/*.png
 
 # IDE / editor
 .vscode/
