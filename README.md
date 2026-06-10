@@ -20,7 +20,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Graph Neural Networks for Node Classification (Cora)](./graph-neural-networks-cora/) | Node classification on Cora citation network with GCN from scratch, GraphSAGE, GAT | ✅ Complete |
 | [Reinforcement Learning with DQN on CartPole](./reinforcement-learning-dqn/) | DQN agent on CartPole-v1 - Q-network, replay buffer, target net, Double DQN comparison | ✅ Complete |
 | [Variational Autoencoder on MNIST](./variational-autoencoder-mnist/) | VAE from scratch in PyTorch - vanilla AE baseline, reparameterization, latent traversals | ✅ Complete |
-| [Denoising Diffusion Model on MNIST](./diffusion-models-mnist/) | DDPM from scratch in PyTorch - noise schedule, U-Net noise predictor, ancestral sampling | 🔄 In Progress |
+| [Denoising Diffusion Model on MNIST](./diffusion-models-mnist/) | DDPM from scratch in PyTorch - noise schedule, U-Net noise predictor, ancestral sampling | ✅ Complete |
 
 ## Tech Stack
 
