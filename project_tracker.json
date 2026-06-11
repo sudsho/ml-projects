@@ -1,19 +1,31 @@
 {
-  "current_project": "diffusion-models-mnist",
-  "current_project_day": 4,
+  "current_project": "char-transformer-shakespeare",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "diffusion-models-mnist",
-    "title": "Denoising Diffusion Model on MNIST",
-    "description": "Build a DDPM from scratch in PyTorch on MNIST - forward noising schedule with closed-form sampling, a small U-Net noise predictor, training on the simplified loss, then ancestral sampling and a noise-schedule comparison",
+    "name": "char-transformer-shakespeare",
+    "title": "Character-Level Transformer Language Model",
+    "description": "A decoder-only transformer trained from scratch in PyTorch on the tiny-shakespeare corpus - tokenization and batching, multi-head self-attention with causal masking, the full block with residual + layernorm, then training and autoregressive sampling",
     "total_days": 4,
     "daily_plan": [
-      "Forward diffusion process - linear and cosine beta schedules, closed-form q(x_t|x_0), visualize progressive noising of MNIST digits",
-      "U-Net noise predictor with sinusoidal timestep embeddings and residual blocks",
-      "Training loop on the simplified DDPM loss with EMA of model weights",
-      "Ancestral sampling, cosine vs linear schedule comparison, sample grid, project README"
+      "Character vocabulary, train/val split, and a batched context-window data loader",
+      "Scaled dot-product attention and multi-head self-attention with a causal mask",
+      "Transformer block (attention + MLP, pre-norm residuals) and the full model, parameter count",
+      "Training loop with AdamW and cosine LR, autoregressive sampling, loss curves, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "diffusion-models-mnist",
+      "title": "Denoising Diffusion Model on MNIST",
+      "description": "Build a DDPM from scratch in PyTorch on MNIST - forward noising schedule with closed-form sampling, a small U-Net noise predictor, training on the simplified loss, then ancestral sampling and a noise-schedule comparison",
+      "total_days": 4,
+      "daily_plan": [
+        "Forward diffusion process - linear and cosine beta schedules, closed-form q(x_t|x_0), visualize progressive noising of MNIST digits",
+        "U-Net noise predictor with sinusoidal timestep embeddings and residual blocks",
+        "Training loop on the simplified DDPM loss with EMA of model weights",
+        "Ancestral sampling, cosine vs linear schedule comparison, sample grid, project README"
+      ]
+    },
     {
       "name": "variational-autoencoder-mnist",
       "title": "Variational Autoencoder on MNIST",
@@ -186,18 +198,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "char-transformer-shakespeare",
-      "title": "Character-Level Transformer Language Model",
-      "description": "A decoder-only transformer trained from scratch in PyTorch on the tiny-shakespeare corpus - tokenization and batching, multi-head self-attention with causal masking, the full block with residual + layernorm, then training and autoregressive sampling",
-      "total_days": 4,
-      "daily_plan": [
-        "Character vocabulary, train/val split, and a batched context-window data loader",
-        "Scaled dot-product attention and multi-head self-attention with a causal mask",
-        "Transformer block (attention + MLP, pre-norm residuals) and the full model, parameter count",
-        "Training loop with AdamW and cosine LR, autoregressive sampling, loss curves, project README"
-      ]
-    },
     {
       "name": "contrastive-learning-simclr",
       "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
