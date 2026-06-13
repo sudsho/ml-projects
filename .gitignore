@@ -49,6 +49,8 @@ variational-autoencoder-mnist/samples/
 diffusion-models-mnist/data/
 diffusion-models-mnist/samples/
 diffusion-models-mnist/*.png
+char-transformer-shakespeare/input.txt
+char-transformer-shakespeare/samples/
 
 # IDE / editor
 .vscode/
