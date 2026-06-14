@@ -51,6 +51,7 @@ class CharVocab:
 
     @property
     def size(self):
+        """Number of distinct characters - the model's vocabulary size."""
         return len(self.chars)
 
     def encode(self, s):
