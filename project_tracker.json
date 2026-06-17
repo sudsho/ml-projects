@@ -1,19 +1,31 @@
 {
-  "current_project": "char-transformer-shakespeare",
-  "current_project_day": 4,
+  "current_project": "contrastive-learning-simclr",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "char-transformer-shakespeare",
-    "title": "Character-Level Transformer Language Model",
-    "description": "A decoder-only transformer trained from scratch in PyTorch on the tiny-shakespeare corpus - tokenization and batching, multi-head self-attention with causal masking, the full block with residual + layernorm, then training and autoregressive sampling",
+    "name": "contrastive-learning-simclr",
+    "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
+    "description": "SimCLR-style representation learning in PyTorch on CIFAR-10 - stochastic augmentation pipeline, an encoder with a projection head, the NT-Xent contrastive loss, then a linear-probe evaluation of the learned features",
     "total_days": 4,
     "daily_plan": [
-      "Character vocabulary, train/val split, and a batched context-window data loader",
-      "Scaled dot-product attention and multi-head self-attention with a causal mask",
-      "Transformer block (attention + MLP, pre-norm residuals) and the full model, parameter count",
-      "Training loop with AdamW and cosine LR, autoregressive sampling, loss curves, project README"
+      "Augmentation pipeline (crop, color jitter, grayscale, blur) producing two correlated views per image",
+      "ResNet encoder with an MLP projection head, feature/embedding shapes",
+      "NT-Xent contrastive loss with cosine similarity, temperature, and in-batch negatives",
+      "Self-supervised training, frozen-encoder linear probe accuracy, t-SNE of embeddings, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "char-transformer-shakespeare",
+      "title": "Character-Level Transformer Language Model",
+      "description": "A decoder-only transformer trained from scratch in PyTorch on the tiny-shakespeare corpus - tokenization and batching, multi-head self-attention with causal masking, the full block with residual + layernorm, then training and autoregressive sampling",
+      "total_days": 4,
+      "daily_plan": [
+        "Character vocabulary, train/val split, and a batched context-window data loader",
+        "Scaled dot-product attention and multi-head self-attention with a causal mask",
+        "Transformer block (attention + MLP, pre-norm residuals) and the full model, parameter count",
+        "Training loop with AdamW and cosine LR, autoregressive sampling, loss curves, project README"
+      ]
+    },
     {
       "name": "diffusion-models-mnist",
       "title": "Denoising Diffusion Model on MNIST",
@@ -197,18 +209,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "contrastive-learning-simclr",
-      "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
-      "description": "SimCLR-style representation learning in PyTorch on CIFAR-10 - stochastic augmentation pipeline, an encoder with a projection head, the NT-Xent contrastive loss, then a linear-probe evaluation of the learned features",
-      "total_days": 4,
-      "daily_plan": [
-        "Augmentation pipeline (crop, color jitter, grayscale, blur) producing two correlated views per image",
-        "ResNet encoder with an MLP projection head, feature/embedding shapes",
-        "NT-Xent contrastive loss with cosine similarity, temperature, and in-batch negatives",
-        "Self-supervised training, frozen-encoder linear probe accuracy, t-SNE of embeddings, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
