@@ -102,8 +102,12 @@ class CharDataset:
         return x.to(self.device), y.to(self.device)
 
 
-def build_pipeline(block_size=128, batch_size=64, device="cpu"):
-    """Wire the full day-1 pipeline together and return the pieces days 2-4 use."""
+def build_pipeline(block_size=128, device="cpu"):
+    """Wire the full day-1 pipeline together and return the pieces days 2-4 use.
+
+    Batch size is not fixed here - it is supplied per call to `get_batch`, so the
+    pipeline only needs the context window length and the target device.
+    """
     text = load_corpus()
     vocab = CharVocab(text)
     encoded = vocab.encode(text)
@@ -115,7 +119,7 @@ def build_pipeline(block_size=128, batch_size=64, device="cpu"):
 
 if __name__ == "__main__":
     torch.manual_seed(1337)
-    vocab, train_ds, val_ds = build_pipeline(block_size=128, batch_size=32)
+    vocab, train_ds, val_ds = build_pipeline(block_size=128)
 
     print(f"vocab size      : {vocab.size}")
     print(f"train tokens    : {len(train_ds.data):,}")

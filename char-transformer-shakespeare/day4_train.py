@@ -132,9 +132,7 @@ def train():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     gen = torch.Generator(device="cpu").manual_seed(0)
 
-    vocab, train_ds, val_ds = build_pipeline(
-        block_size=BLOCK_SIZE, batch_size=BATCH_SIZE, device=device
-    )
+    vocab, train_ds, val_ds = build_pipeline(block_size=BLOCK_SIZE, device=device)
     datasets = {"train": train_ds, "val": val_ds}
 
     model = CharTransformer(
