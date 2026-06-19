@@ -51,6 +51,8 @@ diffusion-models-mnist/samples/
 diffusion-models-mnist/*.png
 char-transformer-shakespeare/input.txt
 char-transformer-shakespeare/samples/
+contrastive-learning-simclr/data/
+contrastive-learning-simclr/*.png
 
 # IDE / editor
 .vscode/
