@@ -1,19 +1,20 @@
 {
-  "current_project": "contrastive-learning-simclr",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "contrastive-learning-simclr",
-    "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
-    "description": "SimCLR-style representation learning in PyTorch on CIFAR-10 - stochastic augmentation pipeline, an encoder with a projection head, the NT-Xent contrastive loss, then a linear-probe evaluation of the learned features",
-    "total_days": 4,
-    "daily_plan": [
-      "Augmentation pipeline (crop, color jitter, grayscale, blur) producing two correlated views per image",
-      "ResNet encoder with an MLP projection head, feature/embedding shapes",
-      "NT-Xent contrastive loss with cosine similarity, temperature, and in-batch negatives",
-      "Self-supervised training, frozen-encoder linear probe accuracy, t-SNE of embeddings, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "contrastive-learning-simclr",
+      "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
+      "description": "SimCLR-style representation learning in PyTorch on CIFAR-10 - stochastic augmentation pipeline, an encoder with a projection head, the NT-Xent contrastive loss, then a linear-probe evaluation of the learned features",
+      "total_days": 4,
+      "daily_plan": [
+        "Augmentation pipeline (crop, color jitter, grayscale, blur) producing two correlated views per image",
+        "ResNet encoder with an MLP projection head, feature/embedding shapes",
+        "NT-Xent contrastive loss with cosine similarity, temperature, and in-batch negatives",
+        "Self-supervised training, frozen-encoder linear probe accuracy, t-SNE of embeddings, project README"
+      ]
+    },
     {
       "name": "char-transformer-shakespeare",
       "title": "Character-Level Transformer Language Model",

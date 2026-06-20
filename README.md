@@ -22,7 +22,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Variational Autoencoder on MNIST](./variational-autoencoder-mnist/) | VAE from scratch in PyTorch - vanilla AE baseline, reparameterization, latent traversals | ✅ Complete |
 | [Denoising Diffusion Model on MNIST](./diffusion-models-mnist/) | DDPM from scratch in PyTorch - noise schedule, U-Net noise predictor, ancestral sampling | ✅ Complete |
 | [Character-Level Transformer Language Model](./char-transformer-shakespeare/) | Decoder-only transformer from scratch in PyTorch on tiny-shakespeare - tokenization, causal self-attention, autoregressive sampling | ✅ Complete |
-| [Self-Supervised Contrastive Learning (SimCLR)](./contrastive-learning-simclr/) | SimCLR representation learning in PyTorch on CIFAR-10 - augmentation pipeline, encoder + projection head, NT-Xent loss, linear probe | 🔄 In Progress |
+| [Self-Supervised Contrastive Learning (SimCLR)](./contrastive-learning-simclr/) | SimCLR representation learning in PyTorch on CIFAR-10 - augmentation pipeline, encoder + projection head, NT-Xent loss, linear probe | ✅ Complete |
 
 ## Tech Stack
 
