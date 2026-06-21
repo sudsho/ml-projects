@@ -23,6 +23,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Denoising Diffusion Model on MNIST](./diffusion-models-mnist/) | DDPM from scratch in PyTorch - noise schedule, U-Net noise predictor, ancestral sampling | ✅ Complete |
 | [Character-Level Transformer Language Model](./char-transformer-shakespeare/) | Decoder-only transformer from scratch in PyTorch on tiny-shakespeare - tokenization, causal self-attention, autoregressive sampling | ✅ Complete |
 | [Self-Supervised Contrastive Learning (SimCLR)](./contrastive-learning-simclr/) | SimCLR representation learning in PyTorch on CIFAR-10 - augmentation pipeline, encoder + projection head, NT-Xent loss, linear probe | ✅ Complete |
+| [Deep Convolutional GAN (DCGAN) on Fashion-MNIST](./dcgan-fashion-mnist/) | DCGAN from scratch in PyTorch - transposed-conv generator, strided-conv discriminator, adversarial training, latent interpolation | 🔄 In Progress |
 
 ## Tech Stack
 
