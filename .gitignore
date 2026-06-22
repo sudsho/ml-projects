@@ -53,6 +53,9 @@ char-transformer-shakespeare/input.txt
 char-transformer-shakespeare/samples/
 contrastive-learning-simclr/data/
 contrastive-learning-simclr/*.png
+dcgan-fashion-mnist/data/
+dcgan-fashion-mnist/samples/
+dcgan-fashion-mnist/*.png
 
 # IDE / editor
 .vscode/
