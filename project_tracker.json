@@ -1,19 +1,20 @@
 {
-  "current_project": "dcgan-fashion-mnist",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "dcgan-fashion-mnist",
-    "title": "Deep Convolutional GAN (DCGAN) on Fashion-MNIST",
-    "description": "A DCGAN built from scratch in PyTorch generating 28x28 Fashion-MNIST images - strided/transposed convolutional generator and discriminator following the DCGAN architectural recipe, the adversarial training loop, then sampling and latent-space interpolation",
-    "total_days": 4,
-    "daily_plan": [
-      "Fashion-MNIST data pipeline normalised to [-1,1], DCGAN generator (transposed conv) and discriminator (strided conv) architectures with DCGAN weight init",
-      "BCEWithLogits adversarial losses, real/fake label conventions with one-sided label smoothing, and the alternating G/D training step",
-      "Full training loop with separate Adam optimisers (beta1=0.5), fixed-noise sample grids per epoch, and mode-collapse / loss monitoring",
-      "Final sample grid, latent-space interpolation between two noise vectors, generator/discriminator loss curves, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "dcgan-fashion-mnist",
+      "title": "Deep Convolutional GAN (DCGAN) on Fashion-MNIST",
+      "description": "A DCGAN built from scratch in PyTorch generating 28x28 Fashion-MNIST images - strided/transposed convolutional generator and discriminator following the DCGAN architectural recipe, the adversarial training loop, then sampling and latent-space interpolation",
+      "total_days": 4,
+      "daily_plan": [
+        "Fashion-MNIST data pipeline normalised to [-1,1], DCGAN generator (transposed conv) and discriminator (strided conv) architectures with DCGAN weight init",
+        "BCEWithLogits adversarial losses, real/fake label conventions with one-sided label smoothing, and the alternating G/D training step",
+        "Full training loop with separate Adam optimisers (beta1=0.5), fixed-noise sample grids per epoch, and mode-collapse / loss monitoring",
+        "Final sample grid, latent-space interpolation between two noise vectors, generator/discriminator loss curves, project README"
+      ]
+    },
     {
       "name": "contrastive-learning-simclr",
       "title": "Self-Supervised Contrastive Learning (SimCLR) on CIFAR-10",
