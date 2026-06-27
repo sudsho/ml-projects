@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "vision-transformer-cifar",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "vision-transformer-cifar",
+    "title": "Vision Transformer (ViT) from Scratch on CIFAR-10",
+    "description": "A Vision Transformer built from scratch in PyTorch for CIFAR-10 classification - patch embedding with a class token and learnable positional embeddings, multi-head self-attention and the transformer encoder block, the full model with an AdamW + cosine training loop, then evaluation, attention-map visualization, and a CNN baseline comparison",
+    "total_days": 4,
+    "daily_plan": [
+      "CIFAR-10 data pipeline with augmentation, patch embedding (conv-as-linear), class token and learnable positional embeddings",
+      "Scaled dot-product attention, multi-head self-attention, and the pre-norm transformer encoder block (attention + MLP, residuals)",
+      "Full ViT assembly (embedding + encoder stack + classification head) and the training loop with AdamW, cosine LR schedule and label smoothing",
+      "Test-set evaluation, attention-map visualization over the CLS token, small-CNN baseline comparison, loss/accuracy curves, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "dcgan-fashion-mnist",
