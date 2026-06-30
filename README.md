@@ -24,7 +24,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Character-Level Transformer Language Model](./char-transformer-shakespeare/) | Decoder-only transformer from scratch in PyTorch on tiny-shakespeare - tokenization, causal self-attention, autoregressive sampling | ✅ Complete |
 | [Self-Supervised Contrastive Learning (SimCLR)](./contrastive-learning-simclr/) | SimCLR representation learning in PyTorch on CIFAR-10 - augmentation pipeline, encoder + projection head, NT-Xent loss, linear probe | ✅ Complete |
 | [Deep Convolutional GAN (DCGAN) on Fashion-MNIST](./dcgan-fashion-mnist/) | DCGAN from scratch in PyTorch - transposed-conv generator, strided-conv discriminator, adversarial training, latent interpolation | ✅ Complete |
-| [Vision Transformer (ViT) from Scratch on CIFAR-10](./vision-transformer-cifar/) | ViT from scratch in PyTorch - patch embedding, class token, multi-head self-attention encoder, attention-map visualization | 🔄 In Progress |
+| [Vision Transformer (ViT) from Scratch on CIFAR-10](./vision-transformer-cifar/) | ViT from scratch in PyTorch - patch embedding, class token, multi-head self-attention encoder, attention-map visualization | ✅ Complete |
 
 ## Tech Stack
 
