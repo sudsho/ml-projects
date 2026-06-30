@@ -57,6 +57,7 @@ dcgan-fashion-mnist/data/
 dcgan-fashion-mnist/samples/
 dcgan-fashion-mnist/*.png
 vision-transformer-cifar/data/
+vision-transformer-cifar/samples/
 vision-transformer-cifar/*.png
 
 # IDE / editor
