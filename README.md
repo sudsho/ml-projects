@@ -25,6 +25,7 @@ Collection of machine learning and data science projects exploring different tec
 | [Self-Supervised Contrastive Learning (SimCLR)](./contrastive-learning-simclr/) | SimCLR representation learning in PyTorch on CIFAR-10 - augmentation pipeline, encoder + projection head, NT-Xent loss, linear probe | ✅ Complete |
 | [Deep Convolutional GAN (DCGAN) on Fashion-MNIST](./dcgan-fashion-mnist/) | DCGAN from scratch in PyTorch - transposed-conv generator, strided-conv discriminator, adversarial training, latent interpolation | ✅ Complete |
 | [Vision Transformer (ViT) from Scratch on CIFAR-10](./vision-transformer-cifar/) | ViT from scratch in PyTorch - patch embedding, class token, multi-head self-attention encoder, attention-map visualization | ✅ Complete |
+| [U-Net Semantic Segmentation on Oxford-IIIT Pet](./unet-segmentation-oxford-pets/) | U-Net from scratch in PyTorch - encoder/decoder with skip connections, joint image/mask augmentation, cross-entropy + Dice loss, mean-IoU | 🔄 In Progress |
 
 ## Tech Stack
 

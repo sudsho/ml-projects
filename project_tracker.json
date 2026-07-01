@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "unet-segmentation-oxford-pets",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "unet-segmentation-oxford-pets",
+    "title": "U-Net Semantic Segmentation on Oxford-IIIT Pet",
+    "description": "A U-Net built from scratch in PyTorch for pixel-wise segmentation of the Oxford-IIIT Pet dataset - a symmetric encoder/decoder with skip connections, joint image/mask augmentation, a combined cross-entropy + soft Dice loss, the training loop with a mean-IoU metric, then qualitative mask overlays and per-class evaluation",
+    "total_days": 4,
+    "daily_plan": [
+      "Oxford-IIIT Pet data pipeline - joint image/mask transforms, trimap {1,2,3} -> class {0,1,2} remapping, resize/normalize, train/val split",
+      "U-Net from scratch - double-conv block, the downsampling encoder and upsampling decoder with skip-connection concatenation",
+      "Combined cross-entropy + soft Dice loss and the training loop with Adam, per-epoch mean-IoU on the validation set",
+      "Qualitative mask overlays, per-class IoU breakdown, loss/IoU curves, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "vision-transformer-cifar",
