@@ -62,6 +62,9 @@ dcgan-fashion-mnist/*.png
 vision-transformer-cifar/data/
 vision-transformer-cifar/samples/
 vision-transformer-cifar/*.png
+unet-segmentation-oxford-pets/data/
+unet-segmentation-oxford-pets/samples/
+unet-segmentation-oxford-pets/*.png
 
 # IDE / editor
 .vscode/
