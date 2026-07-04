@@ -82,6 +82,12 @@ class UNet(nn.Module):
         self.head = nn.Conv2d(widths[0], num_classes, kernel_size=1)
 
     def forward(self, x):
+        """Map an image batch [B, in_channels, H, W] to logits [B, num_classes, H, W].
+
+        The encoder loop caches each stage output as a skip before pooling; the
+        decoder loop consumes those skips in reverse, upsampling and concatenating
+        at each step, and the 1x1 head projects to per-pixel class scores.
+        """
         skips = []
         for encoder in self.encoders:
             x = encoder(x)
