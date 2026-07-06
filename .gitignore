@@ -65,6 +65,8 @@ vision-transformer-cifar/*.png
 unet-segmentation-oxford-pets/data/
 unet-segmentation-oxford-pets/samples/
 unet-segmentation-oxford-pets/*.png
+seq2seq-attention-translation/data/
+seq2seq-attention-translation/*.png
 
 # IDE / editor
 .vscode/
