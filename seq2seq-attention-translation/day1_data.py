@@ -141,6 +141,7 @@ def make_collate_fn(src_pad, tgt_pad):
     """
 
     def collate(batch):
+        """Pad one batch of (src, tgt) pairs and return the true source lengths."""
         srcs, tgts = zip(*batch)
         src_lens = torch.tensor([len(s) for s in srcs], dtype=torch.long)
         src_pad_batch = pad_sequence(srcs, batch_first=True, padding_value=src_pad)
