@@ -1,19 +1,20 @@
 {
-  "current_project": "seq2seq-attention-translation",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "seq2seq-attention-translation",
-    "title": "Neural Machine Translation with Seq2Seq + Attention",
-    "description": "An encoder-decoder LSTM with Bahdanau attention built from scratch in PyTorch for word-level translation - the parallel-corpus data pipeline and vocabularies, a bidirectional-LSTM encoder with additive attention, teacher-forced training with masked cross-entropy, then greedy/beam decoding, BLEU evaluation and attention heatmaps",
-    "total_days": 4,
-    "daily_plan": [
-      "Parallel-corpus data pipeline - tokenization, per-side vocabulary with <pad>/<sos>/<eos>/<unk>, padded batches and reported source lengths",
-      "Bidirectional-LSTM encoder and the Bahdanau (additive) attention module scoring the decoder state against encoder outputs with padding masks",
-      "Attention decoder and the teacher-forcing training loop with masked cross-entropy and gradient clipping",
-      "Greedy and beam-search decoding, BLEU evaluation, attention-heatmap visualization, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "seq2seq-attention-translation",
+      "title": "Neural Machine Translation with Seq2Seq + Attention",
+      "description": "An encoder-decoder LSTM with Bahdanau attention built from scratch in PyTorch for word-level translation - the parallel-corpus data pipeline and vocabularies, a bidirectional-LSTM encoder with additive attention, teacher-forced training with masked cross-entropy, then greedy/beam decoding, BLEU evaluation and attention heatmaps",
+      "total_days": 4,
+      "daily_plan": [
+        "Parallel-corpus data pipeline - tokenization, per-side vocabulary with <pad>/<sos>/<eos>/<unk>, padded batches and reported source lengths",
+        "Bidirectional-LSTM encoder and the Bahdanau (additive) attention module scoring the decoder state against encoder outputs with padding masks",
+        "Attention decoder and the teacher-forcing training loop with masked cross-entropy and gradient clipping",
+        "Greedy and beam-search decoding, BLEU evaluation, attention-heatmap visualization, project README"
+      ]
+    },
     {
       "name": "unet-segmentation-oxford-pets",
       "title": "U-Net Semantic Segmentation on Oxford-IIIT Pet",
