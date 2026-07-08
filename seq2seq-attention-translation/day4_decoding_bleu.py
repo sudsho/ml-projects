@@ -144,6 +144,8 @@ def corpus_bleu(hypotheses, references, max_n=4):
     # add-1 smoothing keeps a single missing higher-order n-gram from zeroing BLEU
     precisions = []
     for n in range(max_n):
+        # only smooth n >= 2: unigram precision is left raw because a zero there
+        # means the translation shares no words at all and *should* score zero
         num = clipped[n] + (1 if n > 0 else 0)
         den = totals[n] + (1 if n > 0 else 0)
         precisions.append(num / den if den > 0 else 0.0)
