@@ -68,6 +68,9 @@ unet-segmentation-oxford-pets/*.png
 seq2seq-attention-translation/data/
 seq2seq-attention-translation/samples/
 seq2seq-attention-translation/*.png
+word2vec-skipgram/data/
+word2vec-skipgram/embeddings/
+word2vec-skipgram/*.png
 
 # IDE / editor
 .vscode/
