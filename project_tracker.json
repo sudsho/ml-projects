@@ -1,19 +1,20 @@
 {
-  "current_project": "word2vec-skipgram",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "word2vec-skipgram",
-    "title": "Word2Vec Skip-Gram with Negative Sampling from Scratch",
-    "description": "A Word2Vec skip-gram model built from scratch in NumPy/PyTorch on a small corpus - text preprocessing with frequency-based subsampling and dynamic-window (center, context) pairs, input/output embedding matrices trained with negative sampling against a unigram^(3/4) noise distribution, then embedding evaluation with cosine-similarity analogies and a t-SNE map",
-    "total_days": 4,
-    "daily_plan": [
-      "Text preprocessing - tokenization, frequency-filtered vocabulary, Mikolov subsampling of frequent words, and dynamic-window skip-gram (center, context) pair generation",
-      "Skip-gram model with input/output embedding matrices and the negative-sampling loss using a unigram^(3/4) noise distribution",
-      "Training loop over subsampled pairs with negative sampling, learning-rate schedule, and periodic nearest-neighbor sanity checks",
-      "Embedding evaluation - cosine-similarity word analogies, nearest neighbours, t-SNE visualization, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "word2vec-skipgram",
+      "title": "Word2Vec Skip-Gram with Negative Sampling from Scratch",
+      "description": "A Word2Vec skip-gram model built from scratch in NumPy on a small corpus - text preprocessing with frequency-based subsampling and dynamic-window (center, context) pairs, input/output embedding matrices trained with negative sampling against a unigram^(3/4) noise distribution, then embedding evaluation with cosine-similarity neighbours, analogy arithmetic and a from-scratch t-SNE map",
+      "total_days": 4,
+      "daily_plan": [
+        "Text preprocessing - tokenization, frequency-filtered vocabulary, Mikolov subsampling of frequent words, and dynamic-window skip-gram (center, context) pair generation",
+        "Skip-gram model with input/output embedding matrices and the negative-sampling loss using a unigram^(3/4) noise distribution",
+        "Training loop over subsampled pairs with negative sampling, learning-rate schedule, and periodic nearest-neighbor sanity checks",
+        "Embedding evaluation - cosine-similarity word analogies, nearest neighbours, t-SNE visualization, project README"
+      ]
+    },
     {
       "name": "seq2seq-attention-translation",
       "title": "Neural Machine Translation with Seq2Seq + Attention",
@@ -269,5 +270,41 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "bpe-tokenizer",
+      "title": "Byte-Pair Encoding Tokenizer from Scratch",
+      "description": "A BPE subword tokenizer built from scratch in Python - train a merge table from a corpus by greedily merging the most frequent adjacent symbol pair, then an encoder/decoder that applies the learned merges, with round-trip tests and a vocabulary-size vs sequence-length analysis",
+      "total_days": 3,
+      "daily_plan": [
+        "Corpus preprocessing, word-frequency table, and the initial character/byte vocabulary with end-of-word markers",
+        "BPE training loop - count adjacent pairs, greedily merge the most frequent, record the ordered merge table, track vocabulary growth",
+        "Encoder/decoder applying the merges in order, round-trip correctness tests, vocab-size vs sequence-length tradeoff plot, project README"
+      ]
+    },
+    {
+      "name": "gradient-boosting-from-scratch",
+      "title": "Gradient Boosting Regressor from Scratch",
+      "description": "A gradient boosting machine built from scratch in NumPy - a CART regression-tree weak learner, then a boosting loop fitting successive trees to the negative gradient (residuals) of the squared-error loss with a learning-rate shrinkage, evaluated against a scikit-learn baseline",
+      "total_days": 4,
+      "daily_plan": [
+        "CART regression tree from scratch - best split by variance reduction, recursive build with max-depth and min-samples stopping",
+        "Boosting loop for squared-error loss - fit trees to residuals with shrinkage, track train/val curves",
+        "Generalize to a differentiable-loss view (pseudo-residuals), add subsampling (stochastic GB), early stopping on validation",
+        "Benchmark against sklearn GradientBoostingRegressor, feature-importance from split gains, learning-curve plots, project README"
+      ]
+    },
+    {
+      "name": "normalizing-flow-mnist",
+      "title": "RealNVP Normalizing Flow on MNIST",
+      "description": "A RealNVP normalizing flow built from scratch in PyTorch on MNIST - affine coupling layers with alternating binary masks, the exact change-of-variables log-likelihood objective, training by maximum likelihood, then sampling and latent interpolation",
+      "total_days": 4,
+      "daily_plan": [
+        "Dequantization and logit preprocessing of MNIST, affine coupling layer with a masked scale/translate network and its log-determinant",
+        "Stack coupling layers with alternating masks into the flow, exact log-likelihood via change of variables, forward/inverse checks",
+        "Maximum-likelihood training loop in bits-per-dimension, gradient clipping, periodic sample grids",
+        "Sampling from the base distribution, latent-space interpolation, bits-per-dim curves, project README"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [Word2Vec Skip-Gram with Negative Sampling](./word2vec-skipgram/) | Skip-gram word embeddings from scratch - subsampling, dynamic-window pairs, negative sampling, analogy + t-SNE evaluation | 🔄 In Progress |
+| [Word2Vec Skip-Gram with Negative Sampling](./word2vec-skipgram/) | Skip-gram word embeddings from scratch - subsampling, dynamic-window pairs, negative sampling, analogy + t-SNE evaluation | ✅ Complete |
 | [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | ✅ Complete |
 | [Sentiment Analysis on Product Reviews](./sentiment-analysis-reviews/) | NLP project using TF-IDF and deep learning for sentiment classification | ✅ Complete |
 | [House Price Prediction](./house-price-prediction/) | Regression with advanced feature engineering on California Housing data | ✅ Complete |
