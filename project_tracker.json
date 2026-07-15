@@ -1,7 +1,17 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "bpe-tokenizer",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "bpe-tokenizer",
+    "title": "Byte-Pair Encoding Tokenizer from Scratch",
+    "description": "A BPE subword tokenizer built from scratch in Python - train a merge table from a corpus by greedily merging the most frequent adjacent symbol pair, then an encoder/decoder that applies the learned merges, with round-trip tests and a vocabulary-size vs sequence-length analysis",
+    "total_days": 3,
+    "daily_plan": [
+      "Corpus preprocessing, word-frequency table, and the initial character/byte vocabulary with end-of-word markers",
+      "BPE training loop - count adjacent pairs, greedily merge the most frequent, record the ordered merge table, track vocabulary growth",
+      "Encoder/decoder applying the merges in order, round-trip correctness tests, vocab-size vs sequence-length tradeoff plot, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "word2vec-skipgram",
@@ -271,17 +281,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "bpe-tokenizer",
-      "title": "Byte-Pair Encoding Tokenizer from Scratch",
-      "description": "A BPE subword tokenizer built from scratch in Python - train a merge table from a corpus by greedily merging the most frequent adjacent symbol pair, then an encoder/decoder that applies the learned merges, with round-trip tests and a vocabulary-size vs sequence-length analysis",
-      "total_days": 3,
-      "daily_plan": [
-        "Corpus preprocessing, word-frequency table, and the initial character/byte vocabulary with end-of-word markers",
-        "BPE training loop - count adjacent pairs, greedily merge the most frequent, record the ordered merge table, track vocabulary growth",
-        "Encoder/decoder applying the merges in order, round-trip correctness tests, vocab-size vs sequence-length tradeoff plot, project README"
-      ]
-    },
     {
       "name": "gradient-boosting-from-scratch",
       "title": "Gradient Boosting Regressor from Scratch",
