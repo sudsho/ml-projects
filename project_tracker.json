@@ -1,18 +1,30 @@
 {
-  "current_project": "bpe-tokenizer",
-  "current_project_day": 2,
+  "current_project": "gradient-boosting-from-scratch",
+  "current_project_day": 0,
   "current_project_meta": {
-    "name": "bpe-tokenizer",
-    "title": "Byte-Pair Encoding Tokenizer from Scratch",
-    "description": "A BPE subword tokenizer built from scratch in Python - train a merge table from a corpus by greedily merging the most frequent adjacent symbol pair, then an encoder/decoder that applies the learned merges, with round-trip tests and a vocabulary-size vs sequence-length analysis",
-    "total_days": 3,
+    "name": "gradient-boosting-from-scratch",
+    "title": "Gradient Boosting Regressor from Scratch",
+    "description": "A gradient boosting machine built from scratch in NumPy - a CART regression-tree weak learner, then a boosting loop fitting successive trees to the negative gradient (residuals) of the squared-error loss with a learning-rate shrinkage, evaluated against a scikit-learn baseline",
+    "total_days": 4,
     "daily_plan": [
-      "Corpus preprocessing, word-frequency table, and the initial character/byte vocabulary with end-of-word markers",
-      "BPE training loop - count adjacent pairs, greedily merge the most frequent, record the ordered merge table, track vocabulary growth",
-      "Encoder/decoder applying the merges in order, round-trip correctness tests, vocab-size vs sequence-length tradeoff plot, project README"
+      "CART regression tree from scratch - best split by variance reduction, recursive build with max-depth and min-samples stopping",
+      "Boosting loop for squared-error loss - fit trees to residuals with shrinkage, track train/val curves",
+      "Generalize to a differentiable-loss view (pseudo-residuals), add subsampling (stochastic GB), early stopping on validation",
+      "Benchmark against sklearn GradientBoostingRegressor, feature-importance from split gains, learning-curve plots, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "bpe-tokenizer",
+      "title": "Byte-Pair Encoding Tokenizer from Scratch",
+      "description": "A BPE subword tokenizer built from scratch in Python - train a merge table from a corpus by greedily merging the most frequent adjacent symbol pair, then an encoder/decoder that applies the learned merges, with round-trip tests and a vocabulary-size vs sequence-length analysis",
+      "total_days": 3,
+      "daily_plan": [
+        "Corpus preprocessing, word-frequency table, and the initial character/byte vocabulary with end-of-word markers",
+        "BPE training loop - count adjacent pairs, greedily merge the most frequent, record the ordered merge table, track vocabulary growth",
+        "Encoder/decoder applying the merges in order, round-trip correctness tests, vocab-size vs sequence-length tradeoff plot, project README"
+      ]
+    },
     {
       "name": "word2vec-skipgram",
       "title": "Word2Vec Skip-Gram with Negative Sampling from Scratch",
@@ -281,18 +293,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "gradient-boosting-from-scratch",
-      "title": "Gradient Boosting Regressor from Scratch",
-      "description": "A gradient boosting machine built from scratch in NumPy - a CART regression-tree weak learner, then a boosting loop fitting successive trees to the negative gradient (residuals) of the squared-error loss with a learning-rate shrinkage, evaluated against a scikit-learn baseline",
-      "total_days": 4,
-      "daily_plan": [
-        "CART regression tree from scratch - best split by variance reduction, recursive build with max-depth and min-samples stopping",
-        "Boosting loop for squared-error loss - fit trees to residuals with shrinkage, track train/val curves",
-        "Generalize to a differentiable-loss view (pseudo-residuals), add subsampling (stochastic GB), early stopping on validation",
-        "Benchmark against sklearn GradientBoostingRegressor, feature-importance from split gains, learning-curve plots, project README"
-      ]
-    },
     {
       "name": "normalizing-flow-mnist",
       "title": "RealNVP Normalizing Flow on MNIST",

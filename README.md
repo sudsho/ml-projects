@@ -6,7 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [Byte-Pair Encoding Tokenizer from Scratch](./bpe-tokenizer/) | Subword BPE tokenizer in pure Python - corpus prep, greedy most-frequent-pair merges, encoder/decoder with round-trip tests | 🔄 In Progress |
+| [Byte-Pair Encoding Tokenizer from Scratch](./bpe-tokenizer/) | Subword BPE tokenizer in pure Python - corpus prep, greedy most-frequent-pair merges, encoder/decoder with round-trip tests | ✅ Complete |
 | [Word2Vec Skip-Gram with Negative Sampling](./word2vec-skipgram/) | Skip-gram word embeddings from scratch - subsampling, dynamic-window pairs, negative sampling, analogy + t-SNE evaluation | ✅ Complete |
 | [Titanic Survival Prediction](./titanic-survival-prediction/) | Classic ML classification - EDA, feature engineering, model comparison | ✅ Complete |
 | [Sentiment Analysis on Product Reviews](./sentiment-analysis-reviews/) | NLP project using TF-IDF and deep learning for sentiment classification | ✅ Complete |
