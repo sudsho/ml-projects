@@ -28,16 +28,25 @@ class _Node:
     Internal nodes store the split feature index and threshold plus left/right
     children. Leaves store a constant prediction value. Keeping both in one class
     keeps the recursive predict simple - a node is a leaf iff `value` is set.
+
+    Internal nodes also record `gain` (the variance reduction this split earned)
+    and `n_samples` (how many training rows reached the node). Neither is needed
+    for prediction, but day 4 sums `gain * n_samples` over every split of a
+    feature to build a gain-weighted feature importance, so the tree has to keep
+    the bookkeeping around instead of throwing it away after the split is chosen.
     """
 
-    __slots__ = ("feature", "threshold", "left", "right", "value")
+    __slots__ = ("feature", "threshold", "left", "right", "value", "gain", "n_samples")
 
-    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
+    def __init__(self, feature=None, threshold=None, left=None, right=None,
+                 value=None, gain=0.0, n_samples=0):
         self.feature = feature
         self.threshold = threshold
         self.left = left
         self.right = right
         self.value = value
+        self.gain = gain
+        self.n_samples = n_samples
 
     @property
     def is_leaf(self):
@@ -138,7 +147,8 @@ class RegressionTree:
         left_mask = X[:, feature] <= threshold
         left = self._build(X[left_mask], y[left_mask], depth + 1)
         right = self._build(X[~left_mask], y[~left_mask], depth + 1)
-        return _Node(feature=feature, threshold=threshold, left=left, right=right)
+        return _Node(feature=feature, threshold=threshold, left=left, right=right,
+                     gain=gain, n_samples=len(y))
 
     def _predict_one(self, x, node):
         if node.is_leaf:
