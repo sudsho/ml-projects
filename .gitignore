@@ -71,6 +71,7 @@ seq2seq-attention-translation/*.png
 word2vec-skipgram/data/
 word2vec-skipgram/embeddings/
 word2vec-skipgram/*.png
+gradient-boosting-from-scratch/*.png
 
 # IDE / editor
 .vscode/
