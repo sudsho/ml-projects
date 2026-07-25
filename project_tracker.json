@@ -1,19 +1,31 @@
 {
-  "current_project": "gradient-boosting-from-scratch",
-  "current_project_day": 4,
+  "current_project": "normalizing-flow-mnist",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "gradient-boosting-from-scratch",
-    "title": "Gradient Boosting Regressor from Scratch",
-    "description": "A gradient boosting machine built from scratch in NumPy - a CART regression-tree weak learner, then a boosting loop fitting successive trees to the negative gradient (residuals) of the squared-error loss with a learning-rate shrinkage, evaluated against a scikit-learn baseline",
+    "name": "normalizing-flow-mnist",
+    "title": "RealNVP Normalizing Flow on MNIST",
+    "description": "A RealNVP normalizing flow built from scratch in PyTorch on MNIST - affine coupling layers with alternating binary masks, the exact change-of-variables log-likelihood objective, training by maximum likelihood, then sampling and latent interpolation",
     "total_days": 4,
     "daily_plan": [
-      "CART regression tree from scratch - best split by variance reduction, recursive build with max-depth and min-samples stopping",
-      "Boosting loop for squared-error loss - fit trees to residuals with shrinkage, track train/val curves",
-      "Generalize to a differentiable-loss view (pseudo-residuals), add subsampling (stochastic GB), early stopping on validation",
-      "Benchmark against sklearn GradientBoostingRegressor, feature-importance from split gains, learning-curve plots, project README"
+      "Dequantization and logit preprocessing of MNIST, affine coupling layer with a masked scale/translate network and its log-determinant",
+      "Stack coupling layers with alternating masks into the flow, exact log-likelihood via change of variables, forward/inverse checks",
+      "Maximum-likelihood training loop in bits-per-dimension, gradient clipping, periodic sample grids",
+      "Sampling from the base distribution, latent-space interpolation, bits-per-dim curves, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "gradient-boosting-from-scratch",
+      "title": "Gradient Boosting Regressor from Scratch",
+      "description": "A gradient boosting machine built from scratch in NumPy - a CART regression-tree weak learner, then a boosting loop fitting successive trees to the negative gradient (residuals) of the squared-error loss with a learning-rate shrinkage, evaluated against a scikit-learn baseline",
+      "total_days": 4,
+      "daily_plan": [
+        "CART regression tree from scratch - best split by variance reduction, recursive build with max-depth and min-samples stopping",
+        "Boosting loop for squared-error loss - fit trees to residuals with shrinkage, track train/val curves",
+        "Generalize to a differentiable-loss view (pseudo-residuals), add subsampling (stochastic GB), early stopping on validation",
+        "Benchmark against sklearn GradientBoostingRegressor, feature-importance from split gains, learning-curve plots, project README"
+      ]
+    },
     {
       "name": "bpe-tokenizer",
       "title": "Byte-Pair Encoding Tokenizer from Scratch",
@@ -292,18 +304,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "normalizing-flow-mnist",
-      "title": "RealNVP Normalizing Flow on MNIST",
-      "description": "A RealNVP normalizing flow built from scratch in PyTorch on MNIST - affine coupling layers with alternating binary masks, the exact change-of-variables log-likelihood objective, training by maximum likelihood, then sampling and latent interpolation",
-      "total_days": 4,
-      "daily_plan": [
-        "Dequantization and logit preprocessing of MNIST, affine coupling layer with a masked scale/translate network and its log-determinant",
-        "Stack coupling layers with alternating masks into the flow, exact log-likelihood via change of variables, forward/inverse checks",
-        "Maximum-likelihood training loop in bits-per-dimension, gradient clipping, periodic sample grids",
-        "Sampling from the base distribution, latent-space interpolation, bits-per-dim curves, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
