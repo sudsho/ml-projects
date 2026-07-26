@@ -37,7 +37,6 @@ layer is just (y - t) * exp(-log s), no network inversion required.
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 def dequantize(x, n_bits=8):
