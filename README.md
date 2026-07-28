@@ -6,7 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [RealNVP Normalizing Flow on MNIST](./normalizing-flow-mnist/) | Normalizing flow from scratch in PyTorch - dequantization + logit preprocessing, affine coupling layers with alternating masks, exact change-of-variables log-likelihood, sampling and latent interpolation | 🔄 In Progress |
+| [RealNVP Normalizing Flow on MNIST](./normalizing-flow-mnist/) | Normalizing flow from scratch in PyTorch - dequantization + logit preprocessing, affine coupling layers with alternating masks, exact change-of-variables log-likelihood, temperature sampling and slerp latent interpolation | ✅ Complete |
 | [Gradient Boosting Regressor from Scratch](./gradient-boosting-from-scratch/) | Gradient boosting machine in NumPy - CART regression-tree weak learner, pseudo-residual boosting loop with shrinkage, robust losses, stochastic subsampling and early stopping, gain-weighted feature importance, benchmarked against scikit-learn | ✅ Complete |
 | [Byte-Pair Encoding Tokenizer from Scratch](./bpe-tokenizer/) | Subword BPE tokenizer in pure Python - corpus prep, greedy most-frequent-pair merges, encoder/decoder with round-trip tests | ✅ Complete |
 | [Word2Vec Skip-Gram with Negative Sampling](./word2vec-skipgram/) | Skip-gram word embeddings from scratch - subsampling, dynamic-window pairs, negative sampling, analogy + t-SNE evaluation | ✅ Complete |
