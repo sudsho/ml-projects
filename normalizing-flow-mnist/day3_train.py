@@ -114,6 +114,13 @@ def evaluate_bpd(model, loader, device="cpu", max_batches=20):
 
 
 def train(epochs=10, batch_size=128, lr=1e-3, clip_norm=5.0, sample_every=1):
+    """Maximum-likelihood training loop. Returns (model, history).
+
+    history is a list of (epoch, train_bpd, val_bpd) triples, which is what the
+    day 4 curves are plotted from. clip_norm is the global gradient-norm
+    threshold and the count of batches that hit it is printed each epoch, since a
+    clip rate that stays high means the log-det term is still running away.
+    """
     device = "cuda" if torch.cuda.is_available() else "cpu"
     os.makedirs(SAMPLE_DIR, exist_ok=True)
 
