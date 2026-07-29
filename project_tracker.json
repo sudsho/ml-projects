@@ -1,19 +1,31 @@
 {
-  "current_project": "normalizing-flow-mnist",
-  "current_project_day": 4,
+  "current_project": "gaussian-process-regression",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "normalizing-flow-mnist",
-    "title": "RealNVP Normalizing Flow on MNIST",
-    "description": "A RealNVP normalizing flow built from scratch in PyTorch on MNIST - affine coupling layers with alternating binary masks, the exact change-of-variables log-likelihood objective, training by maximum likelihood, then sampling and latent interpolation",
+    "name": "gaussian-process-regression",
+    "title": "Gaussian Process Regression from Scratch",
+    "description": "A Gaussian process regressor built from scratch in NumPy - RBF and Matern kernels, the exact posterior via a Cholesky solve, hyperparameter learning by maximizing the log marginal likelihood, then predictive uncertainty bands and a comparison against ridge regression",
     "total_days": 4,
     "daily_plan": [
-      "Dequantization and logit preprocessing of MNIST, affine coupling layer with a masked scale/translate network and its log-determinant",
-      "Stack coupling layers with alternating masks into the flow, exact log-likelihood via change of variables, forward/inverse checks",
-      "Maximum-likelihood training loop in bits-per-dimension, gradient clipping, periodic sample grids",
-      "Sampling from the base distribution, latent-space interpolation, bits-per-dim curves, project README"
+      "Kernel functions (RBF, Matern 3/2, periodic) with lengthscale/variance parameters, the Gram matrix, and positive-definiteness checks",
+      "Exact GP posterior via Cholesky factorization - predictive mean and variance, jitter for numerical stability, prior vs posterior sample paths",
+      "Log marginal likelihood and its gradients, hyperparameter optimization, and the automatic Occam's-razor tradeoff between fit and complexity",
+      "Predictive uncertainty bands on noisy data, kernel comparison, ridge-regression baseline, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "normalizing-flow-mnist",
+      "title": "RealNVP Normalizing Flow on MNIST",
+      "description": "A RealNVP normalizing flow built from scratch in PyTorch on MNIST - affine coupling layers with alternating binary masks, the exact change-of-variables log-likelihood objective, training by maximum likelihood, then sampling and latent interpolation",
+      "total_days": 4,
+      "daily_plan": [
+        "Dequantization and logit preprocessing of MNIST, affine coupling layer with a masked scale/translate network and its log-determinant",
+        "Stack coupling layers with alternating masks into the flow, exact log-likelihood via change of variables, forward/inverse checks",
+        "Maximum-likelihood training loop in bits-per-dimension, gradient clipping, periodic sample grids",
+        "Sampling from the base distribution, latent-space interpolation, bits-per-dim curves, project README"
+      ]
+    },
     {
       "name": "gradient-boosting-from-scratch",
       "title": "Gradient Boosting Regressor from Scratch",
@@ -305,18 +317,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "gaussian-process-regression",
-      "title": "Gaussian Process Regression from Scratch",
-      "description": "A Gaussian process regressor built from scratch in NumPy - RBF and Matern kernels, the exact posterior via a Cholesky solve, hyperparameter learning by maximizing the log marginal likelihood, then predictive uncertainty bands and a comparison against ridge regression",
-      "total_days": 4,
-      "daily_plan": [
-        "Kernel functions (RBF, Matern 3/2, periodic) with lengthscale/variance parameters, the Gram matrix, and positive-definiteness checks",
-        "Exact GP posterior via Cholesky factorization - predictive mean and variance, jitter for numerical stability, prior vs posterior sample paths",
-        "Log marginal likelihood and its gradients, hyperparameter optimization, and the automatic Occam's-razor tradeoff between fit and complexity",
-        "Predictive uncertainty bands on noisy data, kernel comparison, ridge-regression baseline, project README"
-      ]
-    },
     {
       "name": "hmm-forward-backward",
       "title": "Hidden Markov Model with Forward-Backward and Viterbi",

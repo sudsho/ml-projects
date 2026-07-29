@@ -6,6 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
+| [Gaussian Process Regression from Scratch](./gaussian-process-regression/) | Exact GP regression in NumPy - RBF / Matern 3/2 / periodic kernels, posterior via Cholesky solve, hyperparameters by log marginal likelihood, predictive uncertainty bands vs a ridge baseline | 🔄 In Progress |
 | [RealNVP Normalizing Flow on MNIST](./normalizing-flow-mnist/) | Normalizing flow from scratch in PyTorch - dequantization + logit preprocessing, affine coupling layers with alternating masks, exact change-of-variables log-likelihood, temperature sampling and slerp latent interpolation | ✅ Complete |
 | [Gradient Boosting Regressor from Scratch](./gradient-boosting-from-scratch/) | Gradient boosting machine in NumPy - CART regression-tree weak learner, pseudo-residual boosting loop with shrinkage, robust losses, stochastic subsampling and early stopping, gain-weighted feature importance, benchmarked against scikit-learn | ✅ Complete |
 | [Byte-Pair Encoding Tokenizer from Scratch](./bpe-tokenizer/) | Subword BPE tokenizer in pure Python - corpus prep, greedy most-frequent-pair merges, encoder/decoder with round-trip tests | ✅ Complete |
