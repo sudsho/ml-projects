@@ -75,6 +75,7 @@ gradient-boosting-from-scratch/*.png
 normalizing-flow-mnist/data/
 normalizing-flow-mnist/samples/
 normalizing-flow-mnist/*.png
+gaussian-process-regression/*.png
 
 # IDE / editor
 .vscode/
