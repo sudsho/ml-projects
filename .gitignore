@@ -76,6 +76,7 @@ normalizing-flow-mnist/data/
 normalizing-flow-mnist/samples/
 normalizing-flow-mnist/*.png
 gaussian-process-regression/*.png
+hmm-forward-backward/*.png
 
 # IDE / editor
 .vscode/
