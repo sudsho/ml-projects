@@ -1,19 +1,31 @@
 {
-  "current_project": "gaussian-process-regression",
-  "current_project_day": 4,
+  "current_project": "hmm-forward-backward",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "gaussian-process-regression",
-    "title": "Gaussian Process Regression from Scratch",
-    "description": "A Gaussian process regressor built from scratch in NumPy - RBF and Matern kernels, the exact posterior via a Cholesky solve, hyperparameter learning by maximizing the log marginal likelihood, then predictive uncertainty bands and a comparison against ridge regression",
+    "name": "hmm-forward-backward",
+    "title": "Hidden Markov Model with Forward-Backward and Viterbi",
+    "description": "A discrete hidden Markov model built from scratch in NumPy - the forward and backward recursions in log space, Viterbi decoding for the most likely state path, and Baum-Welch (EM) to learn the transition and emission matrices from unlabelled sequences",
     "total_days": 4,
     "daily_plan": [
-      "Kernel functions (RBF, Matern 3/2, periodic) with lengthscale/variance parameters, the Gram matrix, and positive-definiteness checks",
-      "Exact GP posterior via Cholesky factorization - predictive mean and variance, jitter for numerical stability, prior vs posterior sample paths",
-      "Log marginal likelihood and its gradients, hyperparameter optimization, and the automatic Occam's-razor tradeoff between fit and complexity",
-      "Predictive uncertainty bands on noisy data, kernel comparison, ridge-regression baseline, project README"
+      "HMM parameterization (initial, transition, emission matrices), sequence sampling, and the forward recursion with log-sum-exp scaling",
+      "Backward recursion, posterior state marginals, and the sequence likelihood computed both directions as a consistency check",
+      "Viterbi decoding in log space with backpointers, contrasted against the posterior-marginal decode on the same sequence",
+      "Baum-Welch EM to re-estimate the parameters from unlabelled data, monotone likelihood check, label-switching discussion, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "gaussian-process-regression",
+      "title": "Gaussian Process Regression from Scratch",
+      "description": "A Gaussian process regressor built from scratch in NumPy - RBF and Matern kernels, the exact posterior via a Cholesky solve, hyperparameter learning by maximizing the log marginal likelihood, then predictive uncertainty bands and a comparison against ridge regression",
+      "total_days": 4,
+      "daily_plan": [
+        "Kernel functions (RBF, Matern 3/2, periodic) with lengthscale/variance parameters, the Gram matrix, and positive-definiteness checks",
+        "Exact GP posterior via Cholesky factorization - predictive mean and variance, jitter for numerical stability, prior vs posterior sample paths",
+        "Log marginal likelihood and its gradients, hyperparameter optimization, and the automatic Occam's-razor tradeoff between fit and complexity",
+        "Predictive uncertainty bands on noisy data, kernel comparison, ridge-regression baseline, project README"
+      ]
+    },
     {
       "name": "normalizing-flow-mnist",
       "title": "RealNVP Normalizing Flow on MNIST",
@@ -317,18 +329,6 @@
     }
   ],
   "project_queue": [
-    {
-      "name": "hmm-forward-backward",
-      "title": "Hidden Markov Model with Forward-Backward and Viterbi",
-      "description": "A discrete hidden Markov model built from scratch in NumPy - the forward and backward recursions in log space, Viterbi decoding for the most likely state path, and Baum-Welch (EM) to learn the transition and emission matrices from unlabelled sequences",
-      "total_days": 4,
-      "daily_plan": [
-        "HMM parameterization (initial, transition, emission matrices), sequence sampling, and the forward recursion with log-sum-exp scaling",
-        "Backward recursion, posterior state marginals, and the sequence likelihood computed both directions as a consistency check",
-        "Viterbi decoding in log space with backpointers, contrasted against the posterior-marginal decode on the same sequence",
-        "Baum-Welch EM to re-estimate the parameters from unlabelled data, monotone likelihood check, label-switching discussion, project README"
-      ]
-    },
     {
       "name": "conformal-prediction-intervals",
       "title": "Conformal Prediction for Distribution-Free Uncertainty",
