@@ -6,7 +6,7 @@ Collection of machine learning and data science projects exploring different tec
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [Hidden Markov Model with Forward-Backward and Viterbi](./hmm-forward-backward/) | Discrete HMM in NumPy - forward/backward recursions in log space, Viterbi decoding with backpointers, Baum-Welch EM to learn transitions and emissions from unlabelled sequences | 🔄 In Progress |
+| [Hidden Markov Model with Forward-Backward and Viterbi](./hmm-forward-backward/) | Discrete HMM in NumPy - forward/backward recursions in log space, smoothed posteriors, Viterbi decoding with backpointers, Baum-Welch EM with a monotonicity check, label-permutation alignment and a restart study | ✅ Complete |
 | [Gaussian Process Regression from Scratch](./gaussian-process-regression/) | Exact GP regression in NumPy - RBF / Matern 3/2 / periodic kernels, posterior via Cholesky solve, hyperparameters by log marginal likelihood, predictive uncertainty bands vs a ridge baseline | ✅ Complete |
 | [RealNVP Normalizing Flow on MNIST](./normalizing-flow-mnist/) | Normalizing flow from scratch in PyTorch - dequantization + logit preprocessing, affine coupling layers with alternating masks, exact change-of-variables log-likelihood, temperature sampling and slerp latent interpolation | ✅ Complete |
 | [Gradient Boosting Regressor from Scratch](./gradient-boosting-from-scratch/) | Gradient boosting machine in NumPy - CART regression-tree weak learner, pseudo-residual boosting loop with shrinkage, robust losses, stochastic subsampling and early stopping, gain-weighted feature importance, benchmarked against scikit-learn | ✅ Complete |
