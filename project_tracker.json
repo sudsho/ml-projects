@@ -1,19 +1,30 @@
 {
-  "current_project": "hmm-forward-backward",
-  "current_project_day": 4,
+  "current_project": "conformal-prediction-intervals",
+  "current_project_day": 1,
   "current_project_meta": {
-    "name": "hmm-forward-backward",
-    "title": "Hidden Markov Model with Forward-Backward and Viterbi",
-    "description": "A discrete hidden Markov model built from scratch in NumPy - the forward and backward recursions in log space, Viterbi decoding for the most likely state path, and Baum-Welch (EM) to learn the transition and emission matrices from unlabelled sequences",
-    "total_days": 4,
+    "name": "conformal-prediction-intervals",
+    "title": "Conformal Prediction for Distribution-Free Uncertainty",
+    "description": "Split and full conformal prediction built from scratch - calibration-set nonconformity scores turned into finite-sample prediction intervals with a guaranteed coverage rate, plus adaptive intervals via conformalized quantile regression and an empirical coverage study",
+    "total_days": 3,
     "daily_plan": [
-      "HMM parameterization (initial, transition, emission matrices), sequence sampling, and the forward recursion with log-sum-exp scaling",
-      "Backward recursion, posterior state marginals, and the sequence likelihood computed both directions as a consistency check",
-      "Viterbi decoding in log space with backpointers, contrasted against the posterior-marginal decode on the same sequence",
-      "Baum-Welch EM to re-estimate the parameters from unlabelled data, monotone likelihood check, label-switching discussion, project README"
+      "Split conformal for regression - nonconformity scores on a held-out calibration set, the ceil((n+1)(1-alpha)) quantile, and marginal coverage",
+      "Conformalized quantile regression for intervals that widen where the data is noisy, compared against the constant-width split-conformal band",
+      "Conformal classification with prediction sets, empirical coverage vs nominal across alpha, the exchangeability assumption and where it breaks, project README"
     ]
   },
   "completed_projects": [
+    {
+      "name": "hmm-forward-backward",
+      "title": "Hidden Markov Model with Forward-Backward and Viterbi",
+      "description": "A discrete hidden Markov model built from scratch in NumPy - the forward and backward recursions in log space, Viterbi decoding for the most likely state path, and Baum-Welch (EM) to learn the transition and emission matrices from unlabelled sequences",
+      "total_days": 4,
+      "daily_plan": [
+        "HMM parameterization (initial, transition, emission matrices), sequence sampling, and the forward recursion with log-sum-exp scaling",
+        "Backward recursion, posterior state marginals, and the sequence likelihood computed both directions as a consistency check",
+        "Viterbi decoding in log space with backpointers, contrasted against the posterior-marginal decode on the same sequence",
+        "Baum-Welch EM to re-estimate the parameters from unlabelled data, monotone likelihood check, label-switching discussion, project README"
+      ]
+    },
     {
       "name": "gaussian-process-regression",
       "title": "Gaussian Process Regression from Scratch",
@@ -330,14 +341,26 @@
   ],
   "project_queue": [
     {
-      "name": "conformal-prediction-intervals",
-      "title": "Conformal Prediction for Distribution-Free Uncertainty",
-      "description": "Split and full conformal prediction built from scratch - calibration-set nonconformity scores turned into finite-sample prediction intervals with a guaranteed coverage rate, plus adaptive intervals via conformalized quantile regression and an empirical coverage study",
+      "name": "kalman-filter-tracking",
+      "title": "Kalman Filter and RTS Smoother from Scratch",
+      "description": "The linear-Gaussian state-space model built from scratch in NumPy - the Kalman filter predict/update recursions, the RTS backward smoother, and parameter estimation by EM, framed against the discrete HMM as the same forward-backward algorithm over a continuous state",
+      "total_days": 4,
+      "daily_plan": [
+        "Linear-Gaussian state-space model, constant-velocity tracking simulation, and the Kalman predict/update recursions with the innovation covariance",
+        "Numerical stability - Joseph-form covariance update, symmetry enforcement, and what a filter divergence actually looks like",
+        "RTS backward smoother and the lag-one smoothed covariance, contrasted against the HMM backward recursion",
+        "EM for the transition and observation noise, missing-observation handling, NEES/NIS consistency checks, project README"
+      ]
+    },
+    {
+      "name": "mixture-density-networks",
+      "title": "Mixture Density Networks for Multimodal Regression",
+      "description": "An MDN built from scratch in PyTorch - a network emitting the parameters of a Gaussian mixture rather than a point estimate, trained by negative log-likelihood, on inverse problems where the conditional distribution is genuinely multimodal and a squared-error regressor averages the modes into a wrong answer",
       "total_days": 3,
       "daily_plan": [
-        "Split conformal for regression - nonconformity scores on a held-out calibration set, the ceil((n+1)(1-alpha)) quantile, and marginal coverage",
-        "Conformalized quantile regression for intervals that widen where the data is noisy, compared against the constant-width split-conformal band",
-        "Conformal classification with prediction sets, empirical coverage vs nominal across alpha, the exchangeability assumption and where it breaks, project README"
+        "The inverse-problem dataset where least squares fails, and why a point regressor lands between the modes rather than on one",
+        "Mixture head with softmax weights and softplus scales, the log-sum-exp mixture NLL, and the numerical traps in it",
+        "Training, mode collapse and variance underflow, sampling from the predictive mixture, calibration against the true conditional, project README"
       ]
     }
   ]
