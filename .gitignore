@@ -77,6 +77,7 @@ normalizing-flow-mnist/samples/
 normalizing-flow-mnist/*.png
 gaussian-process-regression/*.png
 hmm-forward-backward/*.png
+conformal-prediction-intervals/*.png
 
 # IDE / editor
 .vscode/
