@@ -1,19 +1,20 @@
 {
-  "current_project": "kalman-filter-tracking",
-  "current_project_day": 3,
-  "current_project_meta": {
-    "name": "kalman-filter-tracking",
-    "title": "Kalman Filter and RTS Smoother from Scratch",
-    "description": "The linear-Gaussian state-space model built from scratch in NumPy - the Kalman filter predict/update recursions, the RTS backward smoother, and parameter estimation by EM, framed against the discrete HMM as the same forward-backward algorithm over a continuous state",
-    "total_days": 4,
-    "daily_plan": [
-      "Linear-Gaussian state-space model, constant-velocity tracking simulation, and the Kalman predict/update recursions with the innovation covariance",
-      "Numerical stability - Joseph-form covariance update, symmetry enforcement, and what a filter divergence actually looks like",
-      "RTS backward smoother and the lag-one smoothed covariance, contrasted against the HMM backward recursion",
-      "EM for the transition and observation noise, missing-observation handling, NEES/NIS consistency checks, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "kalman-filter-tracking",
+      "title": "Kalman Filter and RTS Smoother from Scratch",
+      "description": "The linear-Gaussian state-space model built from scratch in NumPy - the Kalman predict/update recursions, Joseph-form numerical stability, the RTS backward smoother with the lag-one smoothed covariance, EM for the noise covariances in free and structured parameterizations, filtering through observation blackouts, and NEES/NIS consistency including whether the time-averaged test is valid at all",
+      "total_days": 4,
+      "daily_plan": [
+        "Linear-Gaussian state-space model, constant-velocity tracking simulation, and the Kalman predict/update recursions with the innovation covariance",
+        "Numerical stability - Joseph-form covariance update, symmetry enforcement, and what a filter divergence actually looks like",
+        "RTS backward smoother and the lag-one smoothed covariance, contrasted against the HMM backward recursion",
+        "EM for the transition and observation noise, missing-observation handling, NEES/NIS consistency checks, project README"
+      ]
+    },
     {
       "name": "conformal-prediction-intervals",
       "title": "Conformal Prediction for Distribution-Free Uncertainty",
