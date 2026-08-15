@@ -1,7 +1,17 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "mixture-density-networks",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "mixture-density-networks",
+    "title": "Mixture Density Networks for Multimodal Regression",
+    "description": "An MDN built from scratch in PyTorch - a network emitting the parameters of a Gaussian mixture rather than a point estimate, trained by negative log-likelihood, on inverse problems where the conditional distribution is genuinely multimodal and a squared-error regressor averages the modes into a wrong answer",
+    "total_days": 3,
+    "daily_plan": [
+      "The inverse-problem dataset where least squares fails, and why a point regressor lands between the modes rather than on one",
+      "Mixture head with softmax weights and softplus scales, the log-sum-exp mixture NLL, and the numerical traps in it",
+      "Training, mode collapse and variance underflow, sampling from the predictive mixture, calibration against the true conditional, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "kalman-filter-tracking",
@@ -352,17 +362,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "mixture-density-networks",
-      "title": "Mixture Density Networks for Multimodal Regression",
-      "description": "An MDN built from scratch in PyTorch - a network emitting the parameters of a Gaussian mixture rather than a point estimate, trained by negative log-likelihood, on inverse problems where the conditional distribution is genuinely multimodal and a squared-error regressor averages the modes into a wrong answer",
-      "total_days": 3,
-      "daily_plan": [
-        "The inverse-problem dataset where least squares fails, and why a point regressor lands between the modes rather than on one",
-        "Mixture head with softmax weights and softplus scales, the log-sum-exp mixture NLL, and the numerical traps in it",
-        "Training, mode collapse and variance underflow, sampling from the predictive mixture, calibration against the true conditional, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
