@@ -1,6 +1,6 @@
 {
   "current_project": "mixture-density-networks",
-  "current_project_day": 2,
+  "current_project_day": 3,
   "current_project_meta": {
     "name": "mixture-density-networks",
     "title": "Mixture Density Networks for Multimodal Regression",
@@ -362,5 +362,30 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "epistemic-uncertainty-ensembles",
+      "title": "Epistemic Uncertainty: Deep Ensembles, MC Dropout and Laplace",
+      "description": "The other half of the uncertainty the MDN project did not model - a mixture density network reports the spread of the data and reports it just as confidently where there is no data at all. Deep ensembles, MC dropout and a last-layer Laplace approximation built from scratch in PyTorch, separated into aleatoric and epistemic components on a dataset with a deliberate gap in its input range, and scored on whether the epistemic part actually grows where the training data stops",
+      "total_days": 4,
+      "daily_plan": [
+        "A regression dataset with a hole in it, a heteroscedastic Gaussian head, and the decomposition of predictive variance into aleatoric and epistemic parts - plus the demonstration that a single network reports near-zero uncertainty inside the hole",
+        "Deep ensembles - independent runs from different initializations, the mixture their predictions form, and whether disagreement between members is a usable epistemic signal or mostly initialization noise",
+        "MC dropout as approximate variational inference, the dropout-rate/lengthscale correspondence, and a last-layer Laplace approximation via the Gauss-Newton Hessian",
+        "Scoring them against each other - NLL and CRPS inside and outside the gap, calibration curves, the cost of each method in training runs, project README"
+      ]
+    },
+    {
+      "name": "particle-filter-nonlinear",
+      "title": "Particle Filtering for Nonlinear State-Space Models",
+      "description": "Where the Kalman project stops. Sequential Monte Carlo built from scratch in NumPy - the bootstrap filter on a nonlinear, non-Gaussian state-space model, weight degeneracy and the effective sample size, systematic versus multinomial resampling, the particle smoother, and a comparison against the extended and unscented Kalman filters on the same tracks",
+      "total_days": 4,
+      "daily_plan": [
+        "A nonlinear state-space model where the Gaussian belief is genuinely wrong, importance sampling as the base case, and the bootstrap filter - propagate, weight, resample",
+        "Weight degeneracy and effective sample size, systematic vs multinomial vs stratified resampling, and the variance each one contributes",
+        "The extended and unscented Kalman filters on the same model, and where each one's Gaussian assumption breaks against the particle posterior",
+        "Backward-simulation particle smoothing, likelihood estimation and its unbiasedness, RMSE and coverage against the exact filter on a linear model, project README"
+      ]
+    }
+  ]
 }
