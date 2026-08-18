@@ -261,6 +261,17 @@ def train_point_regressor(inputs, targets, loss_name="mse", epochs=3000, seed=0)
 
 
 def predict(model, xs):
+    """Point predictions for `xs`, as a flat float array.
+
+    The reshape to a column and the ravel back are the whole function: the model
+    wants `(batch, 1)` and every caller here wants a 1-d array to plot or compare
+    against roots. Doing it in one place keeps the shape juggling out of the
+    measurements.
+
+    `no_grad` because none of these calls are ever differentiated, and without it
+    the returned array carries a graph that pins the activations of every batch
+    it was called on.
+    """
     with torch.no_grad():
         column = torch.from_numpy(np.asarray(xs, dtype=np.float32).reshape(-1, 1))
         return model(column).numpy().ravel()
