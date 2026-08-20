@@ -78,6 +78,7 @@ normalizing-flow-mnist/*.png
 gaussian-process-regression/*.png
 hmm-forward-backward/*.png
 conformal-prediction-intervals/*.png
+epistemic-uncertainty-ensembles/*.png
 
 # IDE / editor
 .vscode/
