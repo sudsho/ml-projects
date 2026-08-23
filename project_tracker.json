@@ -1,19 +1,20 @@
 {
-  "current_project": "epistemic-uncertainty-ensembles",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "epistemic-uncertainty-ensembles",
-    "title": "Epistemic Uncertainty: Deep Ensembles, MC Dropout and Laplace",
-    "description": "The other half of the uncertainty the MDN project did not model - a mixture density network reports the spread of the data and reports it just as confidently where there is no data at all. Deep ensembles, MC dropout and a last-layer Laplace approximation built from scratch in PyTorch, separated into aleatoric and epistemic components on a dataset with a deliberate gap in its input range, and scored on whether the epistemic part actually grows where the training data stops",
-    "total_days": 4,
-    "daily_plan": [
-      "A regression dataset with a hole in it, a heteroscedastic Gaussian head, and the decomposition of predictive variance into aleatoric and epistemic parts - plus the demonstration that a single network reports near-zero uncertainty inside the hole",
-      "Deep ensembles - independent runs from different initializations, the mixture their predictions form, and whether disagreement between members is a usable epistemic signal or mostly initialization noise",
-      "MC dropout as approximate variational inference, the dropout-rate/lengthscale correspondence, and a last-layer Laplace approximation via the Gauss-Newton Hessian",
-      "Scoring them against each other - NLL and CRPS inside and outside the gap, calibration curves, the cost of each method in training runs, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "epistemic-uncertainty-ensembles",
+      "title": "Epistemic Uncertainty: Deep Ensembles, MC Dropout and Laplace",
+      "description": "The other half of the uncertainty the MDN project did not model - a mixture density network reports the spread of the data and reports it just as confidently where there is no data at all. Deep ensembles, MC dropout and a last-layer Laplace approximation built from scratch in PyTorch, separated into aleatoric and epistemic components on a dataset with a deliberate gap in its input range, and scored on whether the epistemic part actually grows where the training data stops",
+      "total_days": 4,
+      "daily_plan": [
+        "A regression dataset with a hole in it, a heteroscedastic Gaussian head, and the decomposition of predictive variance into aleatoric and epistemic parts - plus the demonstration that a single network reports near-zero uncertainty inside the hole",
+        "Deep ensembles - independent runs from different initializations, the mixture their predictions form, and whether disagreement between members is a usable epistemic signal or mostly initialization noise",
+        "MC dropout as approximate variational inference, the dropout-rate/lengthscale correspondence, and a last-layer Laplace approximation via the Gauss-Newton Hessian",
+        "Scoring them against each other - NLL and CRPS inside and outside the gap, calibration curves, the cost of each method in training runs, project README"
+      ]
+    },
     {
       "name": "mixture-density-networks",
       "title": "Mixture Density Networks for Multimodal Regression",
