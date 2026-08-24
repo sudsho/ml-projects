@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "particle-filter-nonlinear",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "particle-filter-nonlinear",
+    "title": "Particle Filtering for Nonlinear State-Space Models",
+    "description": "Where the Kalman project stops. Sequential Monte Carlo built from scratch in NumPy - the bootstrap filter on a nonlinear, non-Gaussian state-space model, weight degeneracy and the effective sample size, systematic versus multinomial resampling, the particle smoother, and a comparison against the extended and unscented Kalman filters on the same tracks",
+    "total_days": 4,
+    "daily_plan": [
+      "A nonlinear state-space model where the Gaussian belief is genuinely wrong, importance sampling as the base case, and the bootstrap filter - propagate, weight, resample",
+      "Weight degeneracy and effective sample size, systematic vs multinomial vs stratified resampling, and the variance each one contributes",
+      "The extended and unscented Kalman filters on the same model, and where each one's Gaussian assumption breaks against the particle posterior",
+      "Backward-simulation particle smoothing, likelihood estimation and its unbiasedness, RMSE and coverage against the exact filter on a linear model, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "epistemic-uncertainty-ensembles",
@@ -375,18 +386,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "particle-filter-nonlinear",
-      "title": "Particle Filtering for Nonlinear State-Space Models",
-      "description": "Where the Kalman project stops. Sequential Monte Carlo built from scratch in NumPy - the bootstrap filter on a nonlinear, non-Gaussian state-space model, weight degeneracy and the effective sample size, systematic versus multinomial resampling, the particle smoother, and a comparison against the extended and unscented Kalman filters on the same tracks",
-      "total_days": 4,
-      "daily_plan": [
-        "A nonlinear state-space model where the Gaussian belief is genuinely wrong, importance sampling as the base case, and the bootstrap filter - propagate, weight, resample",
-        "Weight degeneracy and effective sample size, systematic vs multinomial vs stratified resampling, and the variance each one contributes",
-        "The extended and unscented Kalman filters on the same model, and where each one's Gaussian assumption breaks against the particle posterior",
-        "Backward-simulation particle smoothing, likelihood estimation and its unbiasedness, RMSE and coverage against the exact filter on a linear model, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
