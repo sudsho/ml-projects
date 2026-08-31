@@ -1,19 +1,20 @@
 {
-  "current_project": "particle-filter-nonlinear",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "particle-filter-nonlinear",
-    "title": "Particle Filtering for Nonlinear State-Space Models",
-    "description": "Where the Kalman project stops. Sequential Monte Carlo built from scratch in NumPy - the bootstrap filter on a nonlinear, non-Gaussian state-space model, weight degeneracy and the effective sample size, systematic versus multinomial resampling, the particle smoother, and a comparison against the extended and unscented Kalman filters on the same tracks",
-    "total_days": 4,
-    "daily_plan": [
-      "A nonlinear state-space model where the Gaussian belief is genuinely wrong, importance sampling as the base case, and the bootstrap filter - propagate, weight, resample",
-      "Weight degeneracy and effective sample size, systematic vs multinomial vs stratified resampling, and the variance each one contributes",
-      "The extended and unscented Kalman filters on the same model, and where each one's Gaussian assumption breaks against the particle posterior",
-      "Backward-simulation particle smoothing, likelihood estimation and its unbiasedness, RMSE and coverage against the exact filter on a linear model, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "particle-filter-nonlinear",
+      "title": "Particle Filtering for Nonlinear State-Space Models",
+      "description": "Where the Kalman project stops. Sequential Monte Carlo built from scratch in NumPy - the bootstrap filter on a nonlinear, non-Gaussian state-space model, weight degeneracy and the effective sample size, systematic versus multinomial resampling, the particle smoother, and a comparison against the extended and unscented Kalman filters on the same tracks",
+      "total_days": 4,
+      "daily_plan": [
+        "A nonlinear state-space model where the Gaussian belief is genuinely wrong, importance sampling as the base case, and the bootstrap filter - propagate, weight, resample",
+        "Weight degeneracy and effective sample size, systematic vs multinomial vs stratified resampling, and the variance each one contributes",
+        "The extended and unscented Kalman filters on the same model, and where each one's Gaussian assumption breaks against the particle posterior",
+        "Backward-simulation particle smoothing, likelihood estimation and its unbiasedness, RMSE and coverage against the exact filter on a linear model, project README"
+      ]
+    },
     {
       "name": "epistemic-uncertainty-ensembles",
       "title": "Epistemic Uncertainty: Deep Ensembles, MC Dropout and Laplace",
@@ -386,5 +387,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "mcmc-from-scratch",
+      "title": "MCMC from Scratch: Metropolis-Hastings, HMC and the Diagnostics",
+      "description": "Where the particle filter project points. Markov chain Monte Carlo built from scratch in NumPy - random-walk Metropolis and its scaling with dimension, Hamiltonian Monte Carlo with a leapfrog integrator and the energy error that makes the accept step almost free, the convergence diagnostics (R-hat, effective sample size, divergences) and whether each one detects the failure it is sold for, on targets whose exact answers are known and on Neal's funnel where they are known to fail",
+      "total_days": 4,
+      "daily_plan": [
+        "Target distributions with closed-form moments, random-walk Metropolis, detailed balance checked numerically, and the 0.234 acceptance-rate result measured rather than cited",
+        "Why random-walk mixing degrades with dimension, autocorrelation time and the integrated ESS, and independence-sampler and preconditioned proposals as the fixes that only sometimes work",
+        "Hamiltonian Monte Carlo - leapfrog integration, volume preservation and reversibility as testable identities, the energy error/acceptance relationship, and step-size and trajectory-length tuning",
+        "Neal's funnel, where HMC fails and says so via divergences, R-hat and split-R-hat against a chain that has visibly not converged, the non-centred reparameterisation, project README"
+      ]
+    }
+  ]
 }
