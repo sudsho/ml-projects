@@ -161,7 +161,11 @@ def grad_log_density(target, x):
         b = target.b
         r = x[1] - b * (x[0] ** 2 - 100.0)
         return np.array([-x[0] / 100.0 + r * 2.0 * b * x[0], -r])
-    if isinstance(target, Funnel):
+    # targets that carry their own analytic gradient answer for themselves. the
+    # branch was `isinstance(target, Funnel)` until day 4 added a second one;
+    # duck-typing it is the smaller change and keeps the closed list above for
+    # the targets that were written before there was a gradient to write.
+    if hasattr(target, "grad_log_density"):
         return target.grad_log_density(x)
     raise TypeError(f"no analytic gradient for {type(target).__name__}")
 
