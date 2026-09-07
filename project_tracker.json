@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "variational-inference-from-scratch",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "variational-inference-from-scratch",
+    "title": "Variational Inference from Scratch: CAVI, Black-Box Gradients and the ELBO's Blind Spot",
+    "description": "The other way to do the integral the MCMC project spent four days sampling, and picked because it fails in the same place for the same reason. Mean-field CAVI and black-box VI built from scratch in NumPy - the ELBO as a bound with an exactly computable gap on conjugate targets, reverse KL as a mode-seeker measured against forward KL on the same mixture, score-function against reparameterisation gradients with their variances printed rather than cited, and Pareto-smoothed importance sampling as the one diagnostic that is computed from where q put no mass. MCMC's conclusion was that a statistic of the samples you have cannot report on the samples you did not get; the ELBO is an expectation under q and has exactly that shape",
+    "total_days": 4,
+    "daily_plan": [
+      "Conjugate targets with closed-form posteriors, mean-field CAVI and its fixed point, the ELBO gap identified with KL to machine precision, and the mean-field variance underestimate measured against exact numbers under two correlation structures",
+      "Black-box VI - the score-function and reparameterisation gradients of the same ELBO, their variances measured on the same target, Rao-Blackwellisation and control variates, and what the ELBO trace can and cannot say about convergence",
+      "Full-rank against mean-field on correlated targets, the importance-weighted bound, and Pareto-smoothed importance sampling with k-hat as a diagnostic of the tail rather than of the fit",
+      "VI on Neal's funnel against the MCMC project's day 4, k-hat beside the divergence count, what the ELBO does not see, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "mcmc-from-scratch",
@@ -399,18 +410,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "variational-inference-from-scratch",
-      "title": "Variational Inference from Scratch: CAVI, Black-Box Gradients and the ELBO's Blind Spot",
-      "description": "The other way to do the integral the MCMC project spent four days sampling, and picked because it fails in the same place for the same reason. Mean-field CAVI and black-box VI built from scratch in NumPy - the ELBO as a bound with an exactly computable gap on conjugate targets, reverse KL as a mode-seeker measured against forward KL on the same mixture, score-function against reparameterisation gradients with their variances printed rather than cited, and Pareto-smoothed importance sampling as the one diagnostic that is computed from where q put no mass. MCMC's conclusion was that a statistic of the samples you have cannot report on the samples you did not get; the ELBO is an expectation under q and has exactly that shape",
-      "total_days": 4,
-      "daily_plan": [
-        "Conjugate targets with closed-form posteriors, mean-field CAVI and its fixed point, the ELBO gap identified with KL to machine precision, and the mean-field variance underestimate measured against exact numbers under two correlation structures",
-        "Black-box VI - the score-function and reparameterisation gradients of the same ELBO, their variances measured on the same target, Rao-Blackwellisation and control variates, and what the ELBO trace can and cannot say about convergence",
-        "Full-rank against mean-field on correlated targets, the importance-weighted bound, and Pareto-smoothed importance sampling with k-hat as a diagnostic of the tail rather than of the fit",
-        "VI on Neal's funnel against the MCMC project's day 4, k-hat beside the divergence count, what the ELBO does not see, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
