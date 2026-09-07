@@ -1,19 +1,20 @@
 {
-  "current_project": "mcmc-from-scratch",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "mcmc-from-scratch",
-    "title": "MCMC from Scratch: Metropolis-Hastings, HMC and the Diagnostics",
-    "description": "Where the particle filter project points. Markov chain Monte Carlo built from scratch in NumPy - random-walk Metropolis and its scaling with dimension, Hamiltonian Monte Carlo with a leapfrog integrator and the energy error that makes the accept step almost free, the convergence diagnostics (R-hat, effective sample size, divergences) and whether each one detects the failure it is sold for, on targets whose exact answers are known and on Neal's funnel where they are known to fail",
-    "total_days": 4,
-    "daily_plan": [
-      "Target distributions with closed-form moments, random-walk Metropolis, detailed balance checked numerically, and the 0.234 acceptance-rate result measured rather than cited",
-      "Why random-walk mixing degrades with dimension, autocorrelation time and the integrated ESS, and independence-sampler and preconditioned proposals as the fixes that only sometimes work",
-      "Hamiltonian Monte Carlo - leapfrog integration, volume preservation and reversibility as testable identities, the energy error/acceptance relationship, and step-size and trajectory-length tuning",
-      "Neal's funnel, where HMC fails and says so via divergences, R-hat and split-R-hat against a chain that has visibly not converged, the non-centred reparameterisation, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "mcmc-from-scratch",
+      "title": "MCMC from Scratch: Metropolis-Hastings, HMC and the Diagnostics",
+      "description": "Where the particle filter project points. Markov chain Monte Carlo built from scratch in NumPy - random-walk Metropolis and its scaling with dimension, Hamiltonian Monte Carlo with a leapfrog integrator and the energy error that makes the accept step almost free, the convergence diagnostics (R-hat, effective sample size, divergences) and whether each one detects the failure it is sold for, on targets whose exact answers are known and on Neal's funnel where they are known to fail",
+      "total_days": 4,
+      "daily_plan": [
+        "Target distributions with closed-form moments, random-walk Metropolis, detailed balance checked numerically, and the 0.234 acceptance-rate result measured rather than cited",
+        "Why random-walk mixing degrades with dimension, autocorrelation time and the integrated ESS, and independence-sampler and preconditioned proposals as the fixes that only sometimes work",
+        "Hamiltonian Monte Carlo - leapfrog integration, volume preservation and reversibility as testable identities, the energy error/acceptance relationship, and step-size and trajectory-length tuning",
+        "Neal's funnel, where HMC fails and says so via divergences, R-hat and split-R-hat against a chain that has visibly not converged, the non-centred reparameterisation, project README"
+      ]
+    },
     {
       "name": "particle-filter-nonlinear",
       "title": "Particle Filtering for Nonlinear State-Space Models",
@@ -398,5 +399,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "variational-inference-from-scratch",
+      "title": "Variational Inference from Scratch: CAVI, Black-Box Gradients and the ELBO's Blind Spot",
+      "description": "The other way to do the integral the MCMC project spent four days sampling, and picked because it fails in the same place for the same reason. Mean-field CAVI and black-box VI built from scratch in NumPy - the ELBO as a bound with an exactly computable gap on conjugate targets, reverse KL as a mode-seeker measured against forward KL on the same mixture, score-function against reparameterisation gradients with their variances printed rather than cited, and Pareto-smoothed importance sampling as the one diagnostic that is computed from where q put no mass. MCMC's conclusion was that a statistic of the samples you have cannot report on the samples you did not get; the ELBO is an expectation under q and has exactly that shape",
+      "total_days": 4,
+      "daily_plan": [
+        "Conjugate targets with closed-form posteriors, mean-field CAVI and its fixed point, the ELBO gap identified with KL to machine precision, and the mean-field variance underestimate measured against exact numbers under two correlation structures",
+        "Black-box VI - the score-function and reparameterisation gradients of the same ELBO, their variances measured on the same target, Rao-Blackwellisation and control variates, and what the ELBO trace can and cannot say about convergence",
+        "Full-rank against mean-field on correlated targets, the importance-weighted bound, and Pareto-smoothed importance sampling with k-hat as a diagnostic of the tail rather than of the fit",
+        "VI on Neal's funnel against the MCMC project's day 4, k-hat beside the divergence count, what the ELBO does not see, project README"
+      ]
+    }
+  ]
 }
