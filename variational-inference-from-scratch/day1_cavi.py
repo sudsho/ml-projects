@@ -140,6 +140,16 @@ def elbo_by_quadrature_free_energy(q_mean, q_var, mean, cov):
 
 
 def mixture_log_density(z, weights, means, sds):
+    """log p(z) for a 1-D Gaussian mixture, on a grid.
+
+    Deliberately not log-sum-exp, which is the thing to check rather than
+    assume. The grid is [-12, 12] and the components sit at -2 and 2.5 with
+    sd 0.7, so the least favourable point on the grid still has a largest
+    component log-density of -102.6 and a mixture density of 1.8e-45 - forty
+    orders of magnitude clear of underflow, and no point on the grid returns a
+    non-finite log. Widen the grid or shrink the scales and this stops being
+    true.
+    """
     comp = -0.5 * ((z[:, None] - means) / sds) ** 2 - np.log(sds * np.sqrt(2 * np.pi))
     return np.log(np.exp(comp) @ weights)
 
