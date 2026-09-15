@@ -21,10 +21,15 @@ N(0, I), KL 25.946839.
    bias falls like `J / 2T`, where J is the integral of `Var_beta(g)` along the
    path, and J is 29.84 from the CAVI start against 33.47 from N(0, I). The CAVI
    start is 10x closer in KL and ends up 2.3x less biased at T = 10, 1.24x at
-   T = 100 and 1.13x at T = 1000. The precision interpolates linearly, so along
-   the target's long axis the path's variance is 0.12 at beta = 0, 1.0 at
-   beta = 0.9 and 6.2 at beta = 1, and 79% of J sits in the last tenth. From
-   N(0, I), 51% of it sits in the first.
+   T = 100 and 1.13x at T = 1000. J is `KL(q || p) + KL(p || q)`, and the CAVI q
+   is 3.6x further than N(0, I) in the reverse direction, 27.23 against 7.53, so
+   only the forward half of J ever had the head start. The precision interpolates
+   linearly, so along the target's long axis the path's variance is 0.12 at
+   beta = 0, 1.0 at beta = 0.9 and 6.2 at beta = 1, and 79% of J sits in the last
+   tenth. From N(0, I), 51% of it sits in the first. This paragraph first gave
+   that as the reason the head start is lost, and it is not one. Day 2's
+   moment-averaged path is this path mirrored in beta, with 79% of J in the first
+   tenth, and its exact-transition bias is identical at every T.
 
 3. The second moment of the weight is a product of normalisers at temperatures
    past the path, since `f_t^2 / f_{t-1}` is f at `2 beta_t - beta_{t-1}`. From
