@@ -145,6 +145,7 @@ def anneal(path: GaussianPath, betas: np.ndarray, x: np.ndarray, steps: int = 1,
 
 
 def draw(path: GaussianPath, beta: float, n: int) -> np.ndarray:
+    """n exact draws of pi_beta. At beta = 1 these are the posterior draws a real model would not have."""
     m, s, _, _ = path.at(beta)
     return m + RNG.standard_normal((n, path.d)) @ np.linalg.cholesky(s).T
 

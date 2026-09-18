@@ -212,12 +212,14 @@ def exact_bias(path: GaussianPath, betas: np.ndarray):
 
 
 def profile(path: GaussianPath, points: int = 20001):
+    """(grid, E, Var) of d log f / d beta on a uniform grid over [0, 1], the curve TI integrates and J is built from."""
     grid = np.linspace(0.0, 1.0, points)
     moments = np.array([path.score_moments(beta) for beta in grid])
     return grid, moments[:, 0], moments[:, 1]
 
 
 def simpson(values: np.ndarray, grid: np.ndarray) -> float:
+    """Composite Simpson on a uniform grid. Needs an odd number of points, which `profile`'s default gives."""
     h = grid[1] - grid[0]
     return float(h / 3.0 * (values[0] + values[-1] + 4.0 * values[1:-1:2].sum() + 2.0 * values[2:-1:2].sum()))
 
