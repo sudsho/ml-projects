@@ -1,19 +1,20 @@
 {
-  "current_project": "annealed-importance-sampling",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "annealed-importance-sampling",
-    "title": "Annealed Importance Sampling: Estimating log Z from Outside q",
-    "description": "Where the VI project breaks. Every gap it measured was log Z - ELBO against a closed-form normaliser, and the one estimate of log Z it built came from q itself - 0.33 nats low on the funnel from the reverse-KL fit and 0.46 after PSIS, at a k-hat that could not rank the proposals. Annealed importance sampling built from scratch in NumPy on the same closed-form targets: a path of intermediate densities from q to p, MCMC transitions along it, and weights whose mean is unbiased for Z while their log is biased low by an amount that can be measured here and not on a real model. Thermodynamic integration as the deterministic-path counterpart, bidirectional Monte Carlo as a sandwich on log Z, and the funnel again, started from VI day 4's q, to see whether a path out of q escapes the ELBO's blind spot or only moves it onto the path",
-    "total_days": 4,
-    "daily_plan": [
-      "AIS from scratch on Gaussian targets with closed-form log Z - geometric paths, the unbiasedness of Z and the downward bias of log Z measured against the exact normaliser, and the log-weight variance against the number of temperatures",
-      "Thermodynamic integration on the same paths, the discretisation error of a temperature schedule against exact integrals, geometric against moment-averaged paths, and what an adaptive schedule buys",
-      "Bidirectional Monte Carlo - reverse AIS from exact posterior samples as a stochastic upper bound, the sandwich on log Z, and whether its width reports the gap the ELBO could not",
-      "Neal's funnel started from the VI project's day 4 q, how many temperatures close its 1.15-nat gap, the transitions as HMC with the MCMC project's divergence count alongside, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "annealed-importance-sampling",
+      "title": "Annealed Importance Sampling: Estimating log Z from Outside q",
+      "description": "Where the VI project breaks. Every gap it measured was log Z - ELBO against a closed-form normaliser, and the one estimate of log Z it built came from q itself - 0.33 nats low on the funnel from the reverse-KL fit and 0.46 after PSIS, at a k-hat that could not rank the proposals. Annealed importance sampling built from scratch in NumPy on the same closed-form targets: a path of intermediate densities from q to p, MCMC transitions along it, and weights whose mean is unbiased for Z while their log is biased low by an amount that can be measured here and not on a real model. Thermodynamic integration as the deterministic-path counterpart, bidirectional Monte Carlo as a sandwich on log Z, and the funnel again, started from VI day 4's q, to see whether a path out of q escapes the ELBO's blind spot or only moves it onto the path",
+      "total_days": 4,
+      "daily_plan": [
+        "AIS from scratch on Gaussian targets with closed-form log Z - geometric paths, the unbiasedness of Z and the downward bias of log Z measured against the exact normaliser, and the log-weight variance against the number of temperatures",
+        "Thermodynamic integration on the same paths, the discretisation error of a temperature schedule against exact integrals, geometric against moment-averaged paths, and what an adaptive schedule buys",
+        "Bidirectional Monte Carlo - reverse AIS from exact posterior samples as a stochastic upper bound, the sandwich on log Z, and whether its width reports the gap the ELBO could not",
+        "Neal's funnel started from the VI project's day 4 q, how many temperatures close its 1.15-nat gap, the transitions as HMC with the MCMC project's divergence count alongside, project README"
+      ]
+    },
     {
       "name": "variational-inference-from-scratch",
       "title": "Variational Inference from Scratch: CAVI, Black-Box Gradients and the ELBO's Blind Spot",
@@ -422,5 +423,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "smc-samplers-tempering",
+      "title": "Sequential Monte Carlo Samplers: Tempering with Resampling",
+      "description": "Where the AIS project breaks. Every AIS run carried its own weight from q to p, and on the funnel the log of the mean weight stopped about 0.09 nats low at every T from 10 to 1000, because no run reached the neck and a mean of weights cannot put back mass that was never visited. SMC samplers resample between temperatures and choose the next temperature from the effective sample size, which is the particle filter project's machinery pointed at a path instead of at time. Built from scratch in NumPy on the same closed-form targets, so the normalising-constant estimate is still scored against an exact log Z, and the question is whether resampling moves particles into the region the AIS runs missed or only concentrates them on the ones that were already there",
+      "total_days": 4,
+      "daily_plan": [
+        "Tempered SMC on the AIS project's Gaussian targets - reweight, resample, move, the log Z estimate as a product of mean incremental weights, and its bias and variance against AIS on the same path at the same cost",
+        "Adaptive tempering, choosing each next beta by bisection on a target ESS, the number of temperatures it picks against the J / L^2 schedule from AIS day 2, and the extra bias the adaptivity itself introduces",
+        "The move step - MCMC kernels tuned from the particle cloud, how many moves per temperature the resampling needs to avoid collapsing onto a few ancestors, and genealogy depth as a diagnostic",
+        "Neal's funnel from VI day 4's q again, SMC against AIS at matched gradient cost, the particle share below v = -4.16 against p's 8.3%, divergences alongside, project README"
+      ]
+    }
+  ]
 }
