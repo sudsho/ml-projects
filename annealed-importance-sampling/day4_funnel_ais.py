@@ -49,8 +49,9 @@ has its exact start.
    Its mean log weight is thousands of nats off with a standard error in the
    thousands, sd 67949 at T = 100, so the lower side of the sandwich is useless.
    Its `log mean w` is -0.207, -0.008 and +0.260, the closest of any run at
-   T = 100 and above log Z at T = 1000. The ELBO, the AIS lower bound and the
-   log of the mean weight put the two starts in different orders.
+   T = 100 and above log Z at T = 1000. The ELBO and the AIS lower bound prefer
+   the reverse-KL q by thousands of nats, and the log of the mean weight prefers
+   the moment-matched one at T = 100.
 
 Five predictions written before the run. One right, one half, three wrong.
 
