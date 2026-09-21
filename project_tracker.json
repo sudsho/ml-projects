@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "smc-samplers-tempering",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "smc-samplers-tempering",
+    "title": "Sequential Monte Carlo Samplers: Tempering with Resampling",
+    "description": "Where the AIS project breaks. Every AIS run carried its own weight from q to p, and on the funnel the log of the mean weight stopped about 0.09 nats low at every T from 10 to 1000, because no run reached the neck and a mean of weights cannot put back mass that was never visited. SMC samplers resample between temperatures and choose the next temperature from the effective sample size, which is the particle filter project's machinery pointed at a path instead of at time. Built from scratch in NumPy on the same closed-form targets, so the normalising-constant estimate is still scored against an exact log Z, and the question is whether resampling moves particles into the region the AIS runs missed or only concentrates them on the ones that were already there",
+    "total_days": 4,
+    "daily_plan": [
+      "Tempered SMC on the AIS project's Gaussian targets - reweight, resample, move, the log Z estimate as a product of mean incremental weights, and its bias and variance against AIS on the same path at the same cost",
+      "Adaptive tempering, choosing each next beta by bisection on a target ESS, the number of temperatures it picks against the J / L^2 schedule from AIS day 2, and the extra bias the adaptivity itself introduces",
+      "The move step - MCMC kernels tuned from the particle cloud, how many moves per temperature the resampling needs to avoid collapsing onto a few ancestors, and genealogy depth as a diagnostic",
+      "Neal's funnel from VI day 4's q again, SMC against AIS at matched gradient cost, the particle share below v = -4.16 against p's 8.3%, divergences alongside, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "annealed-importance-sampling",
@@ -423,18 +434,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "smc-samplers-tempering",
-      "title": "Sequential Monte Carlo Samplers: Tempering with Resampling",
-      "description": "Where the AIS project breaks. Every AIS run carried its own weight from q to p, and on the funnel the log of the mean weight stopped about 0.09 nats low at every T from 10 to 1000, because no run reached the neck and a mean of weights cannot put back mass that was never visited. SMC samplers resample between temperatures and choose the next temperature from the effective sample size, which is the particle filter project's machinery pointed at a path instead of at time. Built from scratch in NumPy on the same closed-form targets, so the normalising-constant estimate is still scored against an exact log Z, and the question is whether resampling moves particles into the region the AIS runs missed or only concentrates them on the ones that were already there",
-      "total_days": 4,
-      "daily_plan": [
-        "Tempered SMC on the AIS project's Gaussian targets - reweight, resample, move, the log Z estimate as a product of mean incremental weights, and its bias and variance against AIS on the same path at the same cost",
-        "Adaptive tempering, choosing each next beta by bisection on a target ESS, the number of temperatures it picks against the J / L^2 schedule from AIS day 2, and the extra bias the adaptivity itself introduces",
-        "The move step - MCMC kernels tuned from the particle cloud, how many moves per temperature the resampling needs to avoid collapsing onto a few ancestors, and genealogy depth as a diagnostic",
-        "Neal's funnel from VI day 4's q again, SMC against AIS at matched gradient cost, the particle share below v = -4.16 against p's 8.3%, divergences alongside, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
