@@ -1,19 +1,20 @@
 {
-  "current_project": "smc-samplers-tempering",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "smc-samplers-tempering",
-    "title": "Sequential Monte Carlo Samplers: Tempering with Resampling",
-    "description": "Where the AIS project breaks. Every AIS run carried its own weight from q to p, and on the funnel the log of the mean weight stopped about 0.09 nats low at every T from 10 to 1000, because no run reached the neck and a mean of weights cannot put back mass that was never visited. SMC samplers resample between temperatures and choose the next temperature from the effective sample size, which is the particle filter project's machinery pointed at a path instead of at time. Built from scratch in NumPy on the same closed-form targets, so the normalising-constant estimate is still scored against an exact log Z, and the question is whether resampling moves particles into the region the AIS runs missed or only concentrates them on the ones that were already there",
-    "total_days": 4,
-    "daily_plan": [
-      "Tempered SMC on the AIS project's Gaussian targets - reweight, resample, move, the log Z estimate as a product of mean incremental weights, and its bias and variance against AIS on the same path at the same cost",
-      "Adaptive tempering, choosing each next beta by bisection on a target ESS, the number of temperatures it picks against the J / L^2 schedule from AIS day 2, and the extra bias the adaptivity itself introduces",
-      "The move step - MCMC kernels tuned from the particle cloud, how many moves per temperature the resampling needs to avoid collapsing onto a few ancestors, and genealogy depth as a diagnostic",
-      "Neal's funnel from VI day 4's q again, SMC against AIS at matched gradient cost, the particle share below v = -4.16 against p's 8.3%, divergences alongside, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "smc-samplers-tempering",
+      "title": "Sequential Monte Carlo Samplers: Tempering with Resampling",
+      "description": "Where the AIS project breaks. Every AIS run carried its own weight from q to p, and on the funnel the log of the mean weight stopped about 0.09 nats low at every T from 10 to 1000, because no run reached the neck and a mean of weights cannot put back mass that was never visited. SMC samplers resample between temperatures and choose the next temperature from the effective sample size, which is the particle filter project's machinery pointed at a path instead of at time. Built from scratch in NumPy on the same closed-form targets, so the normalising-constant estimate is still scored against an exact log Z, and the question is whether resampling moves particles into the region the AIS runs missed or only concentrates them on the ones that were already there",
+      "total_days": 4,
+      "daily_plan": [
+        "Tempered SMC on the AIS project's Gaussian targets - reweight, resample, move, the log Z estimate as a product of mean incremental weights, and its bias and variance against AIS on the same path at the same cost",
+        "Adaptive tempering, choosing each next beta by bisection on a target ESS, the number of temperatures it picks against the J / L^2 schedule from AIS day 2, and the extra bias the adaptivity itself introduces",
+        "The move step - MCMC kernels tuned from the particle cloud, how many moves per temperature the resampling needs to avoid collapsing onto a few ancestors, and genealogy depth as a diagnostic",
+        "Neal's funnel from VI day 4's q again, SMC against AIS at matched gradient cost, the particle share below v = -4.16 against p's 8.3%, divergences alongside, project README"
+      ]
+    },
     {
       "name": "annealed-importance-sampling",
       "title": "Annealed Importance Sampling: Estimating log Z from Outside q",
@@ -434,5 +435,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "riemannian-hmc-funnel",
+      "title": "Riemannian Manifold HMC: A Step Size That Depends on Where the Particle Is",
+      "description": "Where the SMC project breaks. Day 3 found that a kernel shaped like the particle cloud beats any number of moves of one that is not, and day 4 found the opposite on the funnel, because the neck needs steps about 400x smaller than the mouth and no single mass matrix fits both. The MCMC project's day 4 already removed the dependence by reparameterising, which only works when the funnel is known to be a funnel. Riemannian manifold HMC built from scratch in NumPy puts the dependence in the kinetic energy instead: a position-dependent metric, the generalised leapfrog with its two implicit fixed-point solves, and Betancourt's SoftAbs metric for targets whose Hessian is not positive definite. Scored on the same closed-form funnel against the MCMC project's divergence counts and the SMC and AIS projects' share of p's neck mass below v = -4.16, and the question is whether a metric read off the local curvature reaches the neck at a cost per step that is still worth paying",
+      "total_days": 4,
+      "daily_plan": [
+        "The generalised leapfrog on Gaussian targets where the constant-metric case is exact - the implicit momentum and position updates by fixed-point iteration, how many iterations the tolerance needs, and reversibility and volume preservation measured to rounding against the plain leapfrog",
+        "Neal's funnel with the Fisher information metric, which is known in closed form there - acceptance, divergences and Var(v) against the MCMC project's day 4 HMC at matched gradient evaluations, and where the fixed point stops converging",
+        "The SoftAbs metric from the Hessian, the regularisation constant alpha against the neck depth, and what the log-determinant term in the Hamiltonian contributes by switching it off",
+        "RMHMC as the move step inside SMC day 4's tempered sampler, the neck share below v = -4.16 against p's 8.3% and against the 43% and 63% of the two earlier projects, the cost per effective sample, project README"
+      ]
+    }
+  ]
 }
