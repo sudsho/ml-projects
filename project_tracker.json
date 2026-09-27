@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "riemannian-hmc-funnel",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "riemannian-hmc-funnel",
+    "title": "Riemannian Manifold HMC: A Step Size That Depends on Where the Particle Is",
+    "description": "Where the SMC project breaks. Day 3 found that a kernel shaped like the particle cloud beats any number of moves of one that is not, and day 4 found the opposite on the funnel, because the neck needs steps about 400x smaller than the mouth and no single mass matrix fits both. The MCMC project's day 4 already removed the dependence by reparameterising, which only works when the funnel is known to be a funnel. Riemannian manifold HMC built from scratch in NumPy puts the dependence in the kinetic energy instead: a position-dependent metric, the generalised leapfrog with its two implicit fixed-point solves, and Betancourt's SoftAbs metric for targets whose Hessian is not positive definite. Scored on the same closed-form funnel against the MCMC project's divergence counts and the SMC and AIS projects' share of p's neck mass below v = -4.16, and the question is whether a metric read off the local curvature reaches the neck at a cost per step that is still worth paying",
+    "total_days": 4,
+    "daily_plan": [
+      "The generalised leapfrog on Gaussian targets where the constant-metric case is exact - the implicit momentum and position updates by fixed-point iteration, how many iterations the tolerance needs, and reversibility and volume preservation measured to rounding against the plain leapfrog",
+      "Neal's funnel with the Fisher information metric, which is known in closed form there - acceptance, divergences and Var(v) against the MCMC project's day 4 HMC at matched gradient evaluations, and where the fixed point stops converging",
+      "The SoftAbs metric from the Hessian, the regularisation constant alpha against the neck depth, and what the log-determinant term in the Hamiltonian contributes by switching it off",
+      "RMHMC as the move step inside SMC day 4's tempered sampler, the neck share below v = -4.16 against p's 8.3% and against the 43% and 63% of the two earlier projects, the cost per effective sample, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "smc-samplers-tempering",
@@ -435,18 +446,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "riemannian-hmc-funnel",
-      "title": "Riemannian Manifold HMC: A Step Size That Depends on Where the Particle Is",
-      "description": "Where the SMC project breaks. Day 3 found that a kernel shaped like the particle cloud beats any number of moves of one that is not, and day 4 found the opposite on the funnel, because the neck needs steps about 400x smaller than the mouth and no single mass matrix fits both. The MCMC project's day 4 already removed the dependence by reparameterising, which only works when the funnel is known to be a funnel. Riemannian manifold HMC built from scratch in NumPy puts the dependence in the kinetic energy instead: a position-dependent metric, the generalised leapfrog with its two implicit fixed-point solves, and Betancourt's SoftAbs metric for targets whose Hessian is not positive definite. Scored on the same closed-form funnel against the MCMC project's divergence counts and the SMC and AIS projects' share of p's neck mass below v = -4.16, and the question is whether a metric read off the local curvature reaches the neck at a cost per step that is still worth paying",
-      "total_days": 4,
-      "daily_plan": [
-        "The generalised leapfrog on Gaussian targets where the constant-metric case is exact - the implicit momentum and position updates by fixed-point iteration, how many iterations the tolerance needs, and reversibility and volume preservation measured to rounding against the plain leapfrog",
-        "Neal's funnel with the Fisher information metric, which is known in closed form there - acceptance, divergences and Var(v) against the MCMC project's day 4 HMC at matched gradient evaluations, and where the fixed point stops converging",
-        "The SoftAbs metric from the Hessian, the regularisation constant alpha against the neck depth, and what the log-determinant term in the Hamiltonian contributes by switching it off",
-        "RMHMC as the move step inside SMC day 4's tempered sampler, the neck share below v = -4.16 against p's 8.3% and against the 43% and 63% of the two earlier projects, the cost per effective sample, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
