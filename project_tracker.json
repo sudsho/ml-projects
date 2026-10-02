@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "sampler-correctness-sbc",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "sampler-correctness-sbc",
+    "title": "Getting It Right: Geweke's Joint Test and Simulation-Based Calibration",
+    "description": "Where the RMHMC project breaks. Its day 3 switched off the log det term, the chain moved to v ~ N(-9, 9) with 94.8% of its mass in the neck, and it did so at the same acceptance, 0.994, and the same IACT, 3.04, as the chain on the right target, with zero divergences on both. Every diagnostic in four projects is a statistic of the chain, and a chain that mixes well on the wrong density passes all of them. Geweke's joint-distribution test and simulation-based calibration are built from the other direction: draw parameters from the prior, data from the model, run the sampler, and check that the rank of the truth among the posterior draws is uniform, which a correct sampler must give and a wrong one gives only by accident. Built from scratch in NumPy on the same closed-form targets, so the deliberate bugs, the missing log det, a leapfrog half step dropped, a Metropolis ratio with the wrong proposal density, are known before the test runs, and the question is which of them the tests catch at what cost in sampler runs, and whether the funnel's own bug is one of them",
+    "total_days": 4,
+    "daily_plan": [
+      "Geweke's successive-conditional simulator against the marginal-conditional one on the VI project's conjugate targets - the joint test as a z-score on moment differences, its size on a correct Gibbs sampler and its power against one with a deliberate bug, and how many sweeps the z-score needs",
+      "Simulation-based calibration from scratch - the rank of the prior draw among L posterior draws, the uniformity test and its chi-squared, thinning against the autocorrelation that makes ranks non-uniform on a correct sampler, and how many simulations the histogram needs before it says anything",
+      "The deliberate bugs - the log det term dropped from RMHMC, a leapfrog half step dropped from HMC, a Metropolis ratio with the wrong proposal density, and a sampler that is correct but slow - which test catches which, at what number of runs, and what the shape of the rank histogram says about the bug",
+      "The funnel: SBC on RMHMC day 2's sampler and on day 3's chain with the log det off, whether the ranks of v see what acceptance and IACT did not, the cost against the divergence count, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "riemannian-hmc-funnel",
@@ -447,18 +458,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "sampler-correctness-sbc",
-      "title": "Getting It Right: Geweke's Joint Test and Simulation-Based Calibration",
-      "description": "Where the RMHMC project breaks. Its day 3 switched off the log det term, the chain moved to v ~ N(-9, 9) with 94.8% of its mass in the neck, and it did so at the same acceptance, 0.994, and the same IACT, 3.04, as the chain on the right target, with zero divergences on both. Every diagnostic in four projects is a statistic of the chain, and a chain that mixes well on the wrong density passes all of them. Geweke's joint-distribution test and simulation-based calibration are built from the other direction: draw parameters from the prior, data from the model, run the sampler, and check that the rank of the truth among the posterior draws is uniform, which a correct sampler must give and a wrong one gives only by accident. Built from scratch in NumPy on the same closed-form targets, so the deliberate bugs, the missing log det, a leapfrog half step dropped, a Metropolis ratio with the wrong proposal density, are known before the test runs, and the question is which of them the tests catch at what cost in sampler runs, and whether the funnel's own bug is one of them",
-      "total_days": 4,
-      "daily_plan": [
-        "Geweke's successive-conditional simulator against the marginal-conditional one on the VI project's conjugate targets - the joint test as a z-score on moment differences, its size on a correct Gibbs sampler and its power against one with a deliberate bug, and how many sweeps the z-score needs",
-        "Simulation-based calibration from scratch - the rank of the prior draw among L posterior draws, the uniformity test and its chi-squared, thinning against the autocorrelation that makes ranks non-uniform on a correct sampler, and how many simulations the histogram needs before it says anything",
-        "The deliberate bugs - the log det term dropped from RMHMC, a leapfrog half step dropped from HMC, a Metropolis ratio with the wrong proposal density, and a sampler that is correct but slow - which test catches which, at what number of runs, and what the shape of the rank histogram says about the bug",
-        "The funnel: SBC on RMHMC day 2's sampler and on day 3's chain with the log det off, whether the ranks of v see what acceptance and IACT did not, the cost against the divergence count, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
