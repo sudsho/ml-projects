@@ -160,6 +160,8 @@ was zero on both. Every diagnostic this project and the three before it used
 is a statistic of the chain, and a chain that mixes well on the wrong density
 passes all of them. Geweke's joint-distribution test and simulation-based
 calibration are built to see exactly this and neither has been run here.
+They are the next project, [sampler-correctness-sbc](../sampler-correctness-sbc/),
+whose day 4 puts this chain to them.
 
 **SoftAbs through a fixed-point solve.** Day 3 did not settle whether the fault
 is the metric or the solver. A damped iteration or a Newton step on the
