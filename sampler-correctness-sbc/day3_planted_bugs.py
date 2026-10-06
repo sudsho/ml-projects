@@ -221,6 +221,7 @@ def sbc_ranks(kind, studies, nsim, burn=BURN, thin=THIN):
 
 
 def chi2(ranks):
+    """Day 2's Pearson statistic of the ranks in BINS bins against uniform, along axis 1."""
     bins = ranks * BINS // (L + 1)
     e = ranks.shape[1] / BINS
     return sum(((bins == b).sum(1) - e) ** 2 / e for b in range(BINS))
@@ -250,6 +251,11 @@ def exact_tau_mean(y):
 
 
 def tau_shape(ranks, groups=10):
+    """Pooled histogram of tau's ranks in tenths, as count over expected.
+
+    A tilt is a shift, a U is draws too narrow or a chain that never crosses
+    the truth in a run, and a hump is draws too wide.
+    """
     g = ranks[:, :, 1].ravel() * groups // (L + 1)
     return " ".join(f"{x:.2f}" for x in np.bincount(g, minlength=groups) / (g.size / groups))
 
