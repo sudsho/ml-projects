@@ -12,7 +12,9 @@ log det and the walk with the factor, set the size. Geweke at M = 1000 and
 1. The size row is the same for all three correct samplers and for day 1's
    Gibbs. Geweke rejects 28% to 31% at M = 1000 and 16% to 19% at 10000,
    SBC 3% to 10% at 100 and 3% to 7% at 500. A Geweke row at M = 1000 is
-   read against 30%, not 5%.
+   read against 30%, not 5%. At section 1's y all three give E[tau] 0.961 or
+   0.962, and quadrature with mu integrated out gives 0.9612, so the 0.961
+   the bugs are measured against is the posterior's and not the samplers'.
 
 2. The missing log det is Geweke's bug and costs SBC 500 simulations. It moves
    E[tau] at one y from 0.961 to 1.037, 8%, at the right chain's acceptance,
@@ -231,6 +233,22 @@ def sbc_any(ranks, reps=20000):
     return (chi2(ranks) > crit).any(1).mean()
 
 
+def exact_tau_mean(y):
+    """E[tau | y] by quadrature on tau, with mu integrated out in closed form.
+
+    y | tau ~ N(M0, I / tau + 11' / K0), whose determinant and inverse have
+    closed forms in the two eigenvalues 1 / tau and 1 / tau + N / K0. Uses no
+    random numbers, so it leaves every seeded row below as it was.
+    """
+    t = np.linspace(1e-4, 8.0, 400001)
+    a, b, r = 1.0 / t, 1.0 / K0, y - M0
+    logdet = (N - 1) * np.log(a) + np.log(a + N * b)
+    quad = (r @ r) / a - b * r.sum() ** 2 / (a * (a + N * b))
+    lp = (A0 - 1) * np.log(t) - B0 * t - 0.5 * logdet - 0.5 * quad
+    w = np.exp(lp - lp.max())
+    return (t * w).sum() / w.sum()
+
+
 def tau_shape(ranks, groups=10):
     g = ranks[:, :, 1].ravel() * groups // (L + 1)
     return " ".join(f"{x:.2f}" for x in np.bincount(g, minlength=groups) / (g.size / groups))
@@ -247,6 +265,7 @@ def main():
     print("\n1. acceptance and the stationary E[tau] each sampler reaches at one fixed y")
     mu0, tau0 = prior(1)
     y = np.repeat(simulate_data(mu0, tau0), 4000, 0)
+    print(f"  exact    E[tau | y] {exact_tau_mean(y[0]):.4f} by quadrature")
     for kind, step in SAMPLERS.items():
         mu, tau = prior(4000)
         for _ in range(300):
