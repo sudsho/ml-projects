@@ -36,7 +36,9 @@ where the Gibbs conditionals are closed form and each bug is one wrong symbol.
    autocorrelation 0.995 on tau. It is rejected on 86% of replications at
    M = 1000, 44% at 10000 and still 20% at 50000, where tau alone is at 10%.
    The batches are shorter than the chain's memory, so the test reads slow as
-   wrong, which is the case day 3 has to separate from a bug.
+   wrong, which is the case day 3 has to separate from a bug. It could not:
+   SBC rejects the same sampler on every study at 500 simulations and thin 10,
+   with burn 100 or 2000, and only thin 100 brings it near the size.
 
 Six predictions written before the run. Two right, one half, three wrong.
 
