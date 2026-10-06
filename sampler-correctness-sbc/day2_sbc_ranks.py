@@ -146,6 +146,7 @@ def critical(nsim, reps=20000):
 
 
 def reject(ranks):
+    """Share of studies rejected per parameter, and the share where either one is."""
     stat, _ = chi2_stat(ranks)
     hit = stat > critical(ranks.shape[1])
     return hit.mean(0), hit.any(1).mean()
