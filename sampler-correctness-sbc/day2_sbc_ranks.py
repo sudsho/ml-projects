@@ -17,7 +17,9 @@ studies per row so each rejection rate is a rate and not one coin.
    out at 10% and 9%, 17% for either, with nothing in the lag to explain it.
    Three reruns on other seeds gave 1% to 7%, so that row is a bad draw of
    100 studies, about 2 se out, and a 100-study rate should not be read to
-   better than 3 points either way.
+   better than 3 points either way. The chain thinning is for is day 1's slow
+   Metropolis step, which day 3 runs here: thin 10 rejects on every study and
+   thin 100 at 12%.
 
 2. The chi-squared critical value is calibrated by simulating exactly uniform
    ranks at the same number of simulations, and it is 30.0 at both 50 and
