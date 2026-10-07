@@ -93,7 +93,13 @@ def potential(mu, s, y):
 
 
 def hmc(mu, tau, y, halfstep_bug=False):
-    """Unit-mass HMC on (mu, log tau). The bug leaves out the last half kick."""
+    """Unit-mass HMC on (mu, log tau). The bug leaves out the last half kick.
+
+    The map without it is still a composition of shears and keeps volume, but
+    flipping the end momentum no longer runs it back to the start, so the
+    accept step corrects an energy error on a proposal that is not reversible
+    and detailed balance fails. How fast that shrinks with EPS was not run.
+    """
     s = np.log(tau)
     pm, ps = RNG.standard_normal(mu.size), RNG.standard_normal(mu.size)
     u0, gm, gs = potential(mu, s, y)
