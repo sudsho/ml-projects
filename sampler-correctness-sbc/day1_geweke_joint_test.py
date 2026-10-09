@@ -154,6 +154,13 @@ def batch_var_of_mean(x, batches=50):
 
 
 def geweke_z(mc, sc, naive=False):
+    """Geweke's z per replication and test function, the difference of the two means over the root of their summed variances.
+
+    The marginal-conditional draws are independent, so their variance is the
+    plain one. The successive-conditional chain's is by batch means, unless
+    naive treats it as independent too, which is the standard error that
+    rejected mu on 46.5% of replications of a correct sampler at M = 10000.
+    """
     v_sc = sc.var(1, ddof=1) / sc.shape[1] if naive else batch_var_of_mean(sc)
     v_mc = mc.var(1, ddof=1) / mc.shape[1]
     return (mc.mean(1) - sc.mean(1)) / np.sqrt(v_mc + v_sc)
