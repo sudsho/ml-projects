@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "rank-tests-sharper-sbc",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "rank-tests-sharper-sbc",
+    "title": "Sharper Rank Tests: ECDF Bands, Shaped Alternatives and Ranks That Know About Autocorrelation",
+    "description": "Where the SBC project breaks, the first two items on its list. A slow sampler that leaves the posterior invariant failed both tests on nearly every study, and needed a thin of 100 before it passed, because both tests read autocorrelation as bias. And the binned chi-squared spent 500 simulations on the shape bug and caught the dropped half kick 17% of the time at 500, when both histograms had a visible tilt or hump long before that, since twenty bins and Pearson's statistic throw the order of the bins away. Built from scratch in NumPy on the same planted bugs and the same closed-form targets: the ECDF of the ranks with simultaneous bands, tests aimed at a shift or a change of width, and a rank statistic computed against the effective sample size instead of the raw draw count. The question is how many simulations each bug costs under each statistic, and whether a slow correct sampler can be told apart from a wrong one without thinning it into uselessness",
+    "total_days": 4,
+    "daily_plan": [
+      "The ECDF of the ranks against the uniform, simultaneous bands by simulation and their exact coverage, and the simulations each of SBC day 3's bugs needs under the band against the binned chi-squared at the same size",
+      "Tests aimed at a shape - a rank mean for a shift and a rank variance for a width, their power on the tilt and the hump, and what they give up on a bug that is neither",
+      "Ranks with autocorrelation in them - thinning by the measured IACT, ranks against an ESS-sized subsample, and whether the slow correct sampler passes while the dropped log det still fails, with the nan guard SBC day 3 did not have",
+      "The funnel again, centred HMC that failed for being slow against the log det bug that failed for being wrong, each statistic's cost in sampler runs on both, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "sampler-correctness-sbc",
@@ -459,18 +470,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "rank-tests-sharper-sbc",
-      "title": "Sharper Rank Tests: ECDF Bands, Shaped Alternatives and Ranks That Know About Autocorrelation",
-      "description": "Where the SBC project breaks, the first two items on its list. A slow sampler that leaves the posterior invariant failed both tests on nearly every study, and needed a thin of 100 before it passed, because both tests read autocorrelation as bias. And the binned chi-squared spent 500 simulations on the shape bug and caught the dropped half kick 17% of the time at 500, when both histograms had a visible tilt or hump long before that, since twenty bins and Pearson's statistic throw the order of the bins away. Built from scratch in NumPy on the same planted bugs and the same closed-form targets: the ECDF of the ranks with simultaneous bands, tests aimed at a shift or a change of width, and a rank statistic computed against the effective sample size instead of the raw draw count. The question is how many simulations each bug costs under each statistic, and whether a slow correct sampler can be told apart from a wrong one without thinning it into uselessness",
-      "total_days": 4,
-      "daily_plan": [
-        "The ECDF of the ranks against the uniform, simultaneous bands by simulation and their exact coverage, and the simulations each of SBC day 3's bugs needs under the band against the binned chi-squared at the same size",
-        "Tests aimed at a shape - a rank mean for a shift and a rank variance for a width, their power on the tilt and the hump, and what they give up on a bug that is neither",
-        "Ranks with autocorrelation in them - thinning by the measured IACT, ranks against an ESS-sized subsample, and whether the slow correct sampler passes while the dropped log det still fails, with the nan guard SBC day 3 did not have",
-        "The funnel again, centred HMC that failed for being slow against the log det bug that failed for being wrong, each statistic's cost in sampler runs on both, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
