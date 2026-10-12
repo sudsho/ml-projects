@@ -121,6 +121,11 @@ STATS = {"chi2": chi2_stat, "band": band_stat, "ks": ks_stat}
 
 
 def null_counts(n, reps=REPS):
+    """Rank counts of reps studies of n simulations from a correct sampler, ranks uniform on 0..L.
+
+    Every critical value and coverage row in the file is read off these, and
+    day 2 calibrates its mean and variance tests with it too.
+    """
     return rank_counts(RNG.integers(0, L + 1, (reps, n)))
 
 
