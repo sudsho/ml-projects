@@ -124,6 +124,12 @@ def shape_stats(n):
 
 
 def critical_values(stats):
+    """95% point of each statistic in stats on fresh uniform ranks at stats["n"].
+
+    stats carries its own n so the max statistic's null sds and its critical
+    value come from the same simulation count. Day 3 reads its chi-squared,
+    band and mean thresholds off this too.
+    """
     c = d1.null_counts(stats["n"])
     return {k: np.quantile(f(c), 0.95) for k, f in stats.items() if k != "n"}
 
