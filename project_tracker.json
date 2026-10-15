@@ -1,19 +1,20 @@
 {
-  "current_project": "rank-tests-sharper-sbc",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "rank-tests-sharper-sbc",
-    "title": "Sharper Rank Tests: ECDF Bands, Shaped Alternatives and Ranks That Know About Autocorrelation",
-    "description": "Where the SBC project breaks, the first two items on its list. A slow sampler that leaves the posterior invariant failed both tests on nearly every study, and needed a thin of 100 before it passed, because both tests read autocorrelation as bias. And the binned chi-squared spent 500 simulations on the shape bug and caught the dropped half kick 17% of the time at 500, when both histograms had a visible tilt or hump long before that, since twenty bins and Pearson's statistic throw the order of the bins away. Built from scratch in NumPy on the same planted bugs and the same closed-form targets: the ECDF of the ranks with simultaneous bands, tests aimed at a shift or a change of width, and a rank statistic computed against the effective sample size instead of the raw draw count. The question is how many simulations each bug costs under each statistic, and whether a slow correct sampler can be told apart from a wrong one without thinning it into uselessness",
-    "total_days": 4,
-    "daily_plan": [
-      "The ECDF of the ranks against the uniform, simultaneous bands by simulation and their exact coverage, and the simulations each of SBC day 3's bugs needs under the band against the binned chi-squared at the same size",
-      "Tests aimed at a shape - a rank mean for a shift and a rank variance for a width, their power on the tilt and the hump, and what they give up on a bug that is neither",
-      "Ranks with autocorrelation in them - thinning by the measured IACT, ranks against an ESS-sized subsample, and whether the slow correct sampler passes while the dropped log det still fails, with the nan guard SBC day 3 did not have",
-      "The funnel again, centred HMC that failed for being slow against the log det bug that failed for being wrong, each statistic's cost in sampler runs on both, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "rank-tests-sharper-sbc",
+      "title": "Sharper Rank Tests: ECDF Bands, Shaped Alternatives and Ranks That Know About Autocorrelation",
+      "description": "Where the SBC project breaks, the first two items on its list. A slow sampler that leaves the posterior invariant failed both tests on nearly every study, and needed a thin of 100 before it passed, because both tests read autocorrelation as bias. And the binned chi-squared spent 500 simulations on the shape bug and caught the dropped half kick 17% of the time at 500, when both histograms had a visible tilt or hump long before that, since twenty bins and Pearson's statistic throw the order of the bins away. Built from scratch in NumPy on the same planted bugs and the same closed-form targets: the ECDF of the ranks with simultaneous bands, tests aimed at a shift or a change of width, and a rank statistic computed against the effective sample size instead of the raw draw count. The question is how many simulations each bug costs under each statistic, and whether a slow correct sampler can be told apart from a wrong one without thinning it into uselessness",
+      "total_days": 4,
+      "daily_plan": [
+        "The ECDF of the ranks against the uniform, simultaneous bands by simulation and their exact coverage, and the simulations each of SBC day 3's bugs needs under the band against the binned chi-squared at the same size",
+        "Tests aimed at a shape - a rank mean for a shift and a rank variance for a width, their power on the tilt and the hump, and what they give up on a bug that is neither",
+        "Ranks with autocorrelation in them - thinning by the measured IACT, ranks against an ESS-sized subsample, and whether the slow correct sampler passes while the dropped log det still fails, with the nan guard SBC day 3 did not have",
+        "The funnel again, centred HMC that failed for being slow against the log det bug that failed for being wrong, each statistic's cost in sampler runs on both, project README"
+      ]
+    },
     {
       "name": "sampler-correctness-sbc",
       "title": "Getting It Right: Geweke's Joint Test and Simulation-Based Calibration",
@@ -470,5 +471,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "eight-schools-sbc-with-data",
+      "title": "Eight Schools: SBC With Data in It, Centred Against Non-Centred",
+      "description": "Where the sharper rank tests project breaks, its fourth item. Every funnel row in two projects was a rank test against the prior, because the funnel has no likelihood, and the funnel's two failures were told apart by the rank mean only because one was a pile at one end and the other a symmetric U from chains started at the prior. The eight-schools hierarchy is the funnel with data in it: eight school effects under a shared mean and scale, a likelihood that pulls the scale toward a neck, centred HMC's divergences the textbook failure and the non-centred parameterisation the textbook fix. Built from scratch in NumPy on the same HMC and RMHMC steps, with SBC run with y in it for the first time in this series: draw the hierarchy from its prior, data from it, run both parameterisations, and rank the truth. The question is whether centred HMC's failure on real data is a U the rank mean passes or a tilt it catches, what the non-centred sampler's ranks look like where it is said to be fixed, and what a divergence costs against a rejected study",
+      "total_days": 4,
+      "daily_plan": [
+        "The model and both parameterisations - eight schools with a half-normal scale, the centred and non-centred potentials and their gradients checked by finite differences, centred HMC's divergences and the non-centred sampler's at the same step size, and the posterior of log tau from a long reference run",
+        "SBC with data in it - prior draws of the hierarchy, data from them, 99 draws of each sampler on each, the ranks of mu, log tau and one school effect under the band, the chi-squared and the rank mean at 20 to 500 simulations, and whether centred HMC's ranks are a U or a tilt",
+        "The non-centred sampler under the same tests, the eta ranks against the theta ranks, whether the correct sampler's ranks pass without thinning where the centred one's did not, and the divergence count per study against the rejection",
+        "Step size and the neck - both samplers over eps, the cost in transitions to a passing study, Riemannian HMC with the Fisher metric on log tau if the funnel's lesson carries, project README"
+      ]
+    }
+  ]
 }
