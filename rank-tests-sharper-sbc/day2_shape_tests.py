@@ -158,6 +158,7 @@ def skewed_ranks(studies, nsim, shape=4.0):
 
 
 def first_size(row, key, level=0.8):
+    """The first simulation count in SIZES at which statistic key's rejection share reaches level, or >last if none does."""
     for n in SIZES:
         if row[n][key] >= level:
             return str(n)
