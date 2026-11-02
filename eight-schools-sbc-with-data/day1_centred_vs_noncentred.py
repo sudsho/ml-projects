@@ -99,6 +99,7 @@ def u_centred(z):
 
 
 def grad_centred(z):
+    """Gradient of u_centred in z's columns: mu, then log tau (the Jacobian's -1, the normaliser's +J), then the thetas."""
     mu, u, th = z[:, 0], z[:, 1], z[:, 2:]
     tau2 = np.exp(2 * u)
     dev = th - mu[:, None]
@@ -119,6 +120,7 @@ def u_noncentred(z):
 
 
 def grad_noncentred(z):
+    """Gradient of u_noncentred; the likelihood reaches mu, log tau and eta through theta = mu + tau eta."""
     mu, u, eta = z[:, 0], z[:, 1], z[:, 2:]
     tau = np.exp(u)
     th = mu[:, None] + tau[:, None] * eta
