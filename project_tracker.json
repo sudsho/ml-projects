@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "mass-matrix-from-warmup",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "mass-matrix-from-warmup",
+    "title": "A Mass Matrix From Warmup: One Clock for Every Coordinate",
+    "description": "Where the trajectory length project breaks, its first two items. Every failure in that project was one coordinate's clock against another's: under unit mass the etas, posterior sd near one, turn every six units, and mu, sd near three, every twenty, so fixed lengths passed at four units and fourteen only, NUTS stopped when the etas turned and failed on mu at 97%, and a length tuned on mu failed on eta until it was jittered. Production samplers do not run unit mass; they set a diagonal mass matrix from warmup variances so every coordinate has roughly the same clock. Built from scratch in NumPy on the same non-centred and centred eight schools potentials and rank tests: a diagonal mass from windowed warmup, the period sweep and NUTS again under it, a dense mass from the warmup covariance, and the multinomial draw against a draw from the tree's end. The question is whether one clock makes a blind rule pass where unit mass made it fail, what the warmup that estimates the mass costs in gradients against the 4500 a tuned and jittered length cost, and whether any global mass helps the centred model, whose scale changes with position",
+    "total_days": 4,
+    "daily_plan": [
+      "A diagonal mass from warmup - windowed variance estimates on non-centred eight schools, lag-1 of mu and eta_1 against cos(T) under the new mass, and the fixed-length sweep from one to fourteen units again, whether the two clocks become one and the window widens",
+      "NUTS under the adapted mass - where the U-turn stops now, the band on mu at 500 against day 3's 0.90, and the multinomial draw against a draw from the tree's far end under unit mass, the test of the trajectory length project's untested guess",
+      "A dense mass from the warmup covariance and the centred model - whether a global matrix moves centred NUTS's depth, divergences or band at all, against the funnel's position-dependent metric from the RMHMC project",
+      "What the warmup costs - how many warmup transitions the variance estimate needs before the band passes, the price in gradients to a passing study against the tuned length's 4500 and the swept four units' 3960, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "trajectory-length-found-blind",
@@ -495,18 +506,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "mass-matrix-from-warmup",
-      "title": "A Mass Matrix From Warmup: One Clock for Every Coordinate",
-      "description": "Where the trajectory length project breaks, its first two items. Every failure in that project was one coordinate's clock against another's: under unit mass the etas, posterior sd near one, turn every six units, and mu, sd near three, every twenty, so fixed lengths passed at four units and fourteen only, NUTS stopped when the etas turned and failed on mu at 97%, and a length tuned on mu failed on eta until it was jittered. Production samplers do not run unit mass; they set a diagonal mass matrix from warmup variances so every coordinate has roughly the same clock. Built from scratch in NumPy on the same non-centred and centred eight schools potentials and rank tests: a diagonal mass from windowed warmup, the period sweep and NUTS again under it, a dense mass from the warmup covariance, and the multinomial draw against a draw from the tree's end. The question is whether one clock makes a blind rule pass where unit mass made it fail, what the warmup that estimates the mass costs in gradients against the 4500 a tuned and jittered length cost, and whether any global mass helps the centred model, whose scale changes with position",
-      "total_days": 4,
-      "daily_plan": [
-        "A diagonal mass from warmup - windowed variance estimates on non-centred eight schools, lag-1 of mu and eta_1 against cos(T) under the new mass, and the fixed-length sweep from one to fourteen units again, whether the two clocks become one and the window widens",
-        "NUTS under the adapted mass - where the U-turn stops now, the band on mu at 500 against day 3's 0.90, and the multinomial draw against a draw from the tree's far end under unit mass, the test of the trajectory length project's untested guess",
-        "A dense mass from the warmup covariance and the centred model - whether a global matrix moves centred NUTS's depth, divergences or band at all, against the funnel's position-dependent metric from the RMHMC project",
-        "What the warmup costs - how many warmup transitions the variance estimate needs before the band passes, the price in gradients to a passing study against the tuned length's 4500 and the swept four units' 3960, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
