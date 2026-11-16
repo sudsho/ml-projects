@@ -1,19 +1,20 @@
 {
-  "current_project": "mass-matrix-from-warmup",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "mass-matrix-from-warmup",
-    "title": "A Mass Matrix From Warmup: One Clock for Every Coordinate",
-    "description": "Where the trajectory length project breaks, its first two items. Every failure in that project was one coordinate's clock against another's: under unit mass the etas, posterior sd near one, turn every six units, and mu, sd near three, every twenty, so fixed lengths passed at four units and fourteen only, NUTS stopped when the etas turned and failed on mu at 97%, and a length tuned on mu failed on eta until it was jittered. Production samplers do not run unit mass; they set a diagonal mass matrix from warmup variances so every coordinate has roughly the same clock. Built from scratch in NumPy on the same non-centred and centred eight schools potentials and rank tests: a diagonal mass from windowed warmup, the period sweep and NUTS again under it, a dense mass from the warmup covariance, and the multinomial draw against a draw from the tree's end. The question is whether one clock makes a blind rule pass where unit mass made it fail, what the warmup that estimates the mass costs in gradients against the 4500 a tuned and jittered length cost, and whether any global mass helps the centred model, whose scale changes with position",
-    "total_days": 4,
-    "daily_plan": [
-      "A diagonal mass from warmup - windowed variance estimates on non-centred eight schools, lag-1 of mu and eta_1 against cos(T) under the new mass, and the fixed-length sweep from one to fourteen units again, whether the two clocks become one and the window widens",
-      "NUTS under the adapted mass - where the U-turn stops now, the band on mu at 500 against day 3's 0.90, and the multinomial draw against a draw from the tree's far end under unit mass, the test of the trajectory length project's untested guess",
-      "A dense mass from the warmup covariance and the centred model - whether a global matrix moves centred NUTS's depth, divergences or band at all, against the funnel's position-dependent metric from the RMHMC project",
-      "What the warmup costs - how many warmup transitions the variance estimate needs before the band passes, the price in gradients to a passing study against the tuned length's 4500 and the swept four units' 3960, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "mass-matrix-from-warmup",
+      "title": "A Mass Matrix From Warmup: One Clock for Every Coordinate",
+      "description": "Where the trajectory length project breaks, its first two items. Every failure in that project was one coordinate's clock against another's: under unit mass the etas, posterior sd near one, turn every six units, and mu, sd near three, every twenty, so fixed lengths passed at four units and fourteen only, NUTS stopped when the etas turned and failed on mu at 97%, and a length tuned on mu failed on eta until it was jittered. Production samplers do not run unit mass; they set a diagonal mass matrix from warmup variances so every coordinate has roughly the same clock. Built from scratch in NumPy on the same non-centred and centred eight schools potentials and rank tests: a diagonal mass from windowed warmup, the period sweep and NUTS again under it, a dense mass from the warmup covariance, and the multinomial draw against a draw from the tree's end. The question is whether one clock makes a blind rule pass where unit mass made it fail, what the warmup that estimates the mass costs in gradients against the 4500 a tuned and jittered length cost, and whether any global mass helps the centred model, whose scale changes with position",
+      "total_days": 4,
+      "daily_plan": [
+        "A diagonal mass from warmup - windowed variance estimates on non-centred eight schools, lag-1 of mu and eta_1 against cos(T) under the new mass, and the fixed-length sweep from one to fourteen units again, whether the two clocks become one and the window widens",
+        "NUTS under the adapted mass - where the U-turn stops now, the band on mu at 500 against day 3's 0.90, and the multinomial draw against a draw from the tree's far end under unit mass, the test of the trajectory length project's untested guess",
+        "A dense mass from the warmup covariance and the centred model - whether a global matrix moves centred NUTS's depth, divergences or band at all, against the funnel's position-dependent metric from the RMHMC project",
+        "What the warmup costs - how many warmup transitions the variance estimate needs before the band passes, the price in gradients to a passing study against the tuned length's 4500 and the swept four units' 3960, project README"
+      ]
+    },
     {
       "name": "trajectory-length-found-blind",
       "title": "Trajectory Length Found Blind: The Period Guess, the U-Turn and a Length Tuned on the Chain",
@@ -506,5 +507,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "noise-of-a-rejection-share",
+      "title": "The Noise of a Rejection Share: How Far Forty Studies Move the Band",
+      "description": "Where the mass matrix project breaks, its third item, with the second as the first thing the answer is used on. Every verdict in three projects was the share of 40 studies the band rejects at 500 simulations, read as a pass near 0.25 and a fail near 0.40 against a noise put at 0.07 and never measured. Then one sampler read 0.60 on one set of studies and 0.42 on the next, and day 1's only pass under the mass, 0.25 at two units, came back 0.47 and 0.38. Built from scratch in NumPy on the same non-centred eight schools potentials, samplers and rank tests: the share when the ranks are drawn uniform by construction and nothing can be wrong, the same share over many fresh sets of studies for one passing and one failing sampler, how the spread falls with the number of studies and what it costs in gradients, and then the mass pooled over a study's chains or fixed at the prior's variances against the per-chain one, read with the measured noise. The question is what a share of 0.25 and a share of 0.40 are worth at 40 studies, how many it takes to tell them apart, which of the old on-the-line readings survive that, and whether log tau's failure after a 400 window is the mass's noise or its form",
+      "total_days": 4,
+      "daily_plan": [
+        "The share when nothing is wrong - ranks drawn uniform by construction, the band's rejection share over sets of 40 studies at 20 to 500 simulations, its mean against the nominal level and its spread against the binomial sd, and whether studies that share a set of simulations are independent the way that sd assumes",
+        "The share of a real sampler - unit mass at four units and NUTS under the 100 window mass, each on many fresh sets of 40 studies, the between-set spread on mu, log tau and the joint, against day 1's binomial figure and the 0.2 the last project saw",
+        "How many studies - the spread against 40, 80 and 160 studies, the number needed to tell 0.25 from 0.40 at a stated error, its cost in gradients, and the on-the-line readings of the last three projects sorted into those that survive and those that do not",
+        "Noise or form - the mass pooled over a study's chains and the mass fixed at the prior's variances against the per-chain mass after 25, 100 and 400 windows, on enough studies to read the difference, whether log tau still fails, project README"
+      ]
+    }
+  ]
 }
