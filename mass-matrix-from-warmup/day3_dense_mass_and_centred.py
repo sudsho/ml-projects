@@ -114,6 +114,7 @@ def mass_of(cov):
 
 
 def unit_mass(c, d=D):
+    """The identity for each of c chains in mass_of's form, so the fast window runs through the same sampler as the rest."""
     return mass_of(np.tile(np.eye(d), (c, 1, 1)))
 
 
