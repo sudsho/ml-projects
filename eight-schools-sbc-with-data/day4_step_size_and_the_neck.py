@@ -146,6 +146,12 @@ def dkin_du(u, pq):
 
 
 def hamiltonian(z, p):
+    """H = U(z) + 0.5 log det G(u) + 0.5 p' G(u)^-1 p, with log tau's momentum on its own constant mass G_U.
+
+    The log det term is what makes the metric position-dependent rather than
+    just a rescaled kinetic energy; leave it out and the sampler targets the
+    wrong density in the neck.
+    """
     g = masses(z[:, 1])
     pq = np.concatenate([p[:, :1], p[:, 2:]], 1)
     return (es.u_centred(z) + 0.5 * np.log(g).sum(1)
