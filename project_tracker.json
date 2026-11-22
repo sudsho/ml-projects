@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "tree-too-long-on-log-tau",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "tree-too-long-on-log-tau",
+    "title": "Too Long on Log Tau: Where the Tree Stops and Whether It Should",
+    "description": "Where the noise of a rejection share breaks, its first item, with the last as the tool it needs. On 120 studies NUTS fails on log tau under every diagonal mass tried, per-chain, pooled over a study's 500 chains or fixed at the prior's variances, with log tau's lag-1 at +0.32 or more under all of them, while a fixed two units after the 400 window passed. The mass matrix project guessed the tree runs too long on log tau's side, the reverse of the trajectory project where it was too short for mu, and nothing has tested it. Built from scratch in NumPy on the same non-centred eight schools potentials, tree and rank tests: common random numbers for the momenta so two samplers from one state are a paired reading, where along log tau the tree stops and how far log tau has moved by then, the tree capped or cut short against the full one, and partial momentum refresh as the alternative to a shorter tree. The question is whether log tau's lag is the tree overshooting a coordinate with no clock, and what a paired design saves against the 103 studies an unpaired one needs",
+    "total_days": 4,
+    "daily_plan": [
+      "Paired readings - common random numbers for the momenta and the slice so two samplers from one warmed state share every draw until they differ, checked on a ten-dimensional normal, and the sd of a paired gap in band share against day 4's unpaired -0.20 to +0.125",
+      "Where the tree stops - per transition, the tree's length against log tau's start, its displacement in log tau along the trajectory and at the draw, and whether the draw lands past log tau's turn where the lag-1 is positive",
+      "The tree cut short - maximum depth 3 to 6 and the multinomial draw restricted to the first half of the tree, paired against the full tree on enough studies to read a 0.1 gap, band on log tau and the joint",
+      "Partial refresh - momentum kept with a fraction alpha between transitions against the shorter tree, both priced in gradients against unit mass at four units and the fixed two units after the 400 window, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "noise-of-a-rejection-share",
@@ -519,18 +530,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "tree-too-long-on-log-tau",
-      "title": "Too Long on Log Tau: Where the Tree Stops and Whether It Should",
-      "description": "Where the noise of a rejection share breaks, its first item, with the last as the tool it needs. On 120 studies NUTS fails on log tau under every diagonal mass tried, per-chain, pooled over a study's 500 chains or fixed at the prior's variances, with log tau's lag-1 at +0.32 or more under all of them, while a fixed two units after the 400 window passed. The mass matrix project guessed the tree runs too long on log tau's side, the reverse of the trajectory project where it was too short for mu, and nothing has tested it. Built from scratch in NumPy on the same non-centred eight schools potentials, tree and rank tests: common random numbers for the momenta so two samplers from one state are a paired reading, where along log tau the tree stops and how far log tau has moved by then, the tree capped or cut short against the full one, and partial momentum refresh as the alternative to a shorter tree. The question is whether log tau's lag is the tree overshooting a coordinate with no clock, and what a paired design saves against the 103 studies an unpaired one needs",
-      "total_days": 4,
-      "daily_plan": [
-        "Paired readings - common random numbers for the momenta and the slice so two samplers from one warmed state share every draw until they differ, checked on a ten-dimensional normal, and the sd of a paired gap in band share against day 4's unpaired -0.20 to +0.125",
-        "Where the tree stops - per transition, the tree's length against log tau's start, its displacement in log tau along the trajectory and at the draw, and whether the draw lands past log tau's turn where the lag-1 is positive",
-        "The tree cut short - maximum depth 3 to 6 and the multinomial draw restricted to the first half of the tree, paired against the full tree on enough studies to read a 0.1 gap, band on log tau and the joint",
-        "Partial refresh - momentum kept with a fraction alpha between transitions against the shorter tree, both priced in gradients against unit mass at four units and the fixed two units after the 400 window, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
