@@ -180,6 +180,12 @@ def explicit_step(x, v, px, pv, eps, s2inv, gv):
 
 
 def energy(x, v, px, pv, s2inv, gv):
+    """RMHMC energy under the Fisher metric diag(e^-v, ..., gv).
+
+    There is no n*v/2 term. The potential has +n*v/2 from x's normaliser and
+    half the log det of the metric has -n*v/2, so they cancel and only the
+    constant log gv is left, which is dropped.
+    """
     return (0.5 * v * v * s2inv + 0.5 * math.exp(-v) * sum(b * b for b in x)
             + 0.5 * math.exp(v) * sum(a * a for a in px) + 0.5 * pv * pv / gv)
 
