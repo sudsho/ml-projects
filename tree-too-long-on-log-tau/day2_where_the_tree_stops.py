@@ -235,6 +235,12 @@ def run(z, truth, minv, seed):
 
 
 def report(lab, acc, below, kept, stats, crits):
+    """Print one mass's verdicts and where its tree stopped; returns (joint share, log tau share).
+
+    The table by log tau's start bins the transitions, not the studies, and skips
+    any bin under 100 of them. The last two lines ask the per-study question (do
+    rejected studies draw past the turn more often) and the next-transition one.
+    """
     nmax = SIZES[-1]
     rr = below.reshape(STUDIES, nmax, 4)
     hj, hl = p1.hits(rr, stats, crits)
