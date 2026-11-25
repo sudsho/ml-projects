@@ -192,6 +192,7 @@ def spearman(a, b):
 
 
 def print_info(label, acc, div, kept):
+    """One pilot's line: acceptance, divergences as a share of proposals and of chains, and day 2's IACT summary of log tau."""
     med, q90, bad, rho1 = iact_summary(kept)
     print(f"  {label:22s} acc {acc:.3f} div {100 * div.mean() / kept.shape[0]:5.2f}% "
           f"of proposals, {100 * (div > 0).mean():5.1f}% of chains  iact median {med:5.1f} 90% {q90:6.1f}  "
