@@ -135,6 +135,7 @@ def plain_leapfrog(model, q, p, eps):
 
 
 def trajectory(step, q, p, n):
+    """n steps of any (q, p) -> (q, p, iterations, ok) map. ok is false if any step's fixed point failed to converge."""
     iters, ok = 0, True
     for _ in range(n):
         q, p, k, good = step(q, p)
