@@ -198,6 +198,7 @@ def rmhmc(z, eps, steps):
 
 
 def transition(sampler, kind, z, eps, steps):
+    """One transition of either sampler, so the pilots do not branch. rmhmc is centred only and ignores kind; plain hmc reads its step count from es.STEPS, set here."""
     if sampler == "rmhmc":
         return rmhmc(z, eps, steps)
     es.STEPS = steps
@@ -240,6 +241,7 @@ def ends(ranks):
 
 
 def print_info(label, acc, div, kept):
+    """One pilot's line. div is a per-chain count over kept.shape[0] transitions, so its mean over that is the share of proposals."""
     med, q90, bad, rho1 = iact_summary(kept)
     print(f"  {label:30s} acc {acc:.3f} div {100 * div.mean() / kept.shape[0]:6.3f}% of proposals, "
           f"{100 * (div > 0).mean():5.1f}% of chains  iact median {med:5.1f} 90% {q90:6.1f}  "
