@@ -254,6 +254,12 @@ def ais_mala(path: GeometricPath, betas: np.ndarray, runs: int, steps: int, scal
 
 
 def log_mean_exp(a: np.ndarray, axis=None):
+    """log(mean(exp(a))) along axis, with the largest term pulled out first.
+
+    Log weights far from zero overflow or underflow exp(a) unless the max
+    comes out first; what is left is in (0, 1] and at least one term is 1,
+    so the log never sees zero. This is the log of the AIS estimate of Z.
+    """
     top = np.max(a, axis=axis, keepdims=True)
     return np.squeeze(top, axis=axis) + np.log(np.mean(np.exp(a - top), axis=axis))
 
