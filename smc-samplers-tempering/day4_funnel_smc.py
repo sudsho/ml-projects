@@ -164,6 +164,7 @@ def ais(path, n, T):
 
 
 def neck(z):
+    """Share of particles with v below NECK and the lowest v reached, with the same cutoff the riemannian funnel days use for their neck share."""
     v = z[:, -1]
     return np.mean(v < NECK), v.min()
 
