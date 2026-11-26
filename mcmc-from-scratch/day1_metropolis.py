@@ -230,6 +230,7 @@ def integrated_act(v):
 
 
 def ess(v):
+    """Effective sample size, the chain's length over its Geyer IACT."""
     return len(v) / integrated_act(v)
 
 
@@ -259,6 +260,7 @@ def discrete_metropolis_kernel(log_pi, half_width):
 
 
 def detailed_balance_residual(pi, P):
+    """Largest |pi_i P_ij - pi_j P_ji| over all pairs. Zero up to rounding means the flow matrix is symmetric."""
     F = pi[:, None] * P
     return np.abs(F - F.T).max()
 
