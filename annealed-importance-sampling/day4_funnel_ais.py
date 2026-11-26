@@ -169,6 +169,7 @@ def anneal(path: FunnelPath, betas, z, eps=0.2, n_leap=10):
 
 
 def log_mean_exp(a):
+    """Day 1's log_mean_exp over the whole array: the log of the mean weight, max pulled out so exp cannot overflow."""
     top = a.max()
     return top + np.log(np.mean(np.exp(a - top)))
 
