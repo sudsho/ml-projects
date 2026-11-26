@@ -251,6 +251,7 @@ def leapfrog(target, q, p, eps, n_leap, inv_mass=None):
 
 
 def hamiltonian(target, q, p, inv_mass=None):
+    """Potential plus kinetic, with inv_mass = None meaning the identity. The accept step only reads differences, so the target's normaliser does not matter."""
     k = 0.5 * (p @ inv_mass @ p if inv_mass is not None else p @ p)
     return -target.log_density(q) + k
 
@@ -344,6 +345,7 @@ def hmc(target, q0, n_steps, eps, n_leap, rng, inv_mass=None, jitter=0.0):
 
 
 def worst_iact(chain, burn, k_max=5):
+    """Largest IACT over the first k_max coordinates after burn, the one that sets the cost of the whole chain."""
     d = chain.shape[1]
     return max(integrated_act(chain[burn:, k]) for k in range(min(d, k_max)))
 
