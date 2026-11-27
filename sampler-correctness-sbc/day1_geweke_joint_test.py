@@ -70,12 +70,18 @@ M0, K0, A0, B0, N = 0.0, 1.0, 3.0, 2.0, 5
 
 
 def prior(r):
+    """r independent draws of (mu, tau): mu ~ N(M0, 1 / K0), tau ~ Gamma(A0, rate B0).
+
+    The two are independent, mu's sd does not shrink with tau, which is why
+    the posterior needs a Gibbs sweep and not one conjugate draw.
+    """
     mu = M0 + RNG.standard_normal(r) / np.sqrt(K0)
     tau = RNG.gamma(A0, 1.0 / B0, r)
     return mu, tau
 
 
 def simulate_data(mu, tau):
+    """N observations a replication, y ~ N(mu, 1 / tau), as an (r, N) array; tau is a precision."""
     return mu[:, None] + RNG.standard_normal((mu.size, N)) / np.sqrt(tau)[:, None]
 
 
