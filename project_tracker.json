@@ -1,19 +1,20 @@
 {
-  "current_project": "tree-too-long-on-log-tau",
-  "current_project_day": 4,
-  "current_project_meta": {
-    "name": "tree-too-long-on-log-tau",
-    "title": "Too Long on Log Tau: Where the Tree Stops and Whether It Should",
-    "description": "Where the noise of a rejection share breaks, its first item, with the last as the tool it needs. On 120 studies NUTS fails on log tau under every diagonal mass tried, per-chain, pooled over a study's 500 chains or fixed at the prior's variances, with log tau's lag-1 at +0.32 or more under all of them, while a fixed two units after the 400 window passed. The mass matrix project guessed the tree runs too long on log tau's side, the reverse of the trajectory project where it was too short for mu, and nothing has tested it. Built from scratch in NumPy on the same non-centred eight schools potentials, tree and rank tests: common random numbers for the momenta so two samplers from one state are a paired reading, where along log tau the tree stops and how far log tau has moved by then, the tree capped or cut short against the full one, and partial momentum refresh as the alternative to a shorter tree. The question is whether log tau's lag is the tree overshooting a coordinate with no clock, and what a paired design saves against the 103 studies an unpaired one needs",
-    "total_days": 4,
-    "daily_plan": [
-      "Paired readings - common random numbers for the momenta and the slice so two samplers from one warmed state share every draw until they differ, checked on a ten-dimensional normal, and the sd of a paired gap in band share against day 4's unpaired -0.20 to +0.125",
-      "Where the tree stops - per transition, the tree's length against log tau's start, its displacement in log tau along the trajectory and at the draw, and whether the draw lands past log tau's turn where the lag-1 is positive",
-      "The tree cut short - maximum depth 3 to 6 and the multinomial draw restricted to the first half of the tree, paired against the full tree on enough studies to read a 0.1 gap, band on log tau and the joint",
-      "Partial refresh - momentum kept with a fraction alpha between transitions against the shorter tree, both priced in gradients against unit mass at four units and the fixed two units after the 400 window, project README"
-    ]
-  },
+  "current_project": null,
+  "current_project_day": 0,
+  "current_project_meta": null,
   "completed_projects": [
+    {
+      "name": "tree-too-long-on-log-tau",
+      "title": "Too Long on Log Tau: Where the Tree Stops and Whether It Should",
+      "description": "Where the noise of a rejection share breaks, its first item, with the last as the tool it needs. On 120 studies NUTS fails on log tau under every diagonal mass tried, per-chain, pooled over a study's 500 chains or fixed at the prior's variances, with log tau's lag-1 at +0.32 or more under all of them, while a fixed two units after the 400 window passed. The mass matrix project guessed the tree runs too long on log tau's side, the reverse of the trajectory project where it was too short for mu, and nothing has tested it. Built from scratch in NumPy on the same non-centred eight schools potentials, tree and rank tests: common random numbers for the momenta so two samplers from one state are a paired reading, where along log tau the tree stops and how far log tau has moved by then, the tree capped or cut short against the full one, and partial momentum refresh as the alternative to a shorter tree. The question is whether log tau's lag is the tree overshooting a coordinate with no clock, and what a paired design saves against the 103 studies an unpaired one needs",
+      "total_days": 4,
+      "daily_plan": [
+        "Paired readings - common random numbers for the momenta and the slice so two samplers from one warmed state share every draw until they differ, checked on a ten-dimensional normal, and the sd of a paired gap in band share against day 4's unpaired -0.20 to +0.125",
+        "Where the tree stops - per transition, the tree's length against log tau's start, its displacement in log tau along the trajectory and at the draw, and whether the draw lands past log tau's turn where the lag-1 is positive",
+        "The tree cut short - maximum depth 3 to 6 and the multinomial draw restricted to the first half of the tree, paired against the full tree on enough studies to read a 0.1 gap, band on log tau and the joint",
+        "Partial refresh - momentum kept with a fraction alpha between transitions against the shorter tree, both priced in gradients against unit mass at four units and the fixed two units after the 400 window, project README"
+      ]
+    },
     {
       "name": "noise-of-a-rejection-share",
       "title": "The Noise of a Rejection Share: How Far Forty Studies Move the Band",
@@ -530,5 +531,18 @@
       ]
     }
   ],
-  "project_queue": []
+  "project_queue": [
+    {
+      "name": "how-far-a-direction-is-carried",
+      "title": "How Far a Direction Is Carried: Partial Refresh Swept and Measured",
+      "description": "Where the tree too long on log tau project breaks, its first and fourth items, with the third as the bar a pass has to clear. Partial momentum refresh fixed log tau where no tree and no mass had: one unit at alpha 0.8 failed log tau on 0.075 of 120 studies against the full tree's 0.367 at the same 40 gradients a draw. But alpha has an optimum that nothing locates, one unit at 0.95 had the lowest lag-1 of all and failed twice as often as 0.8, and two units at 0.8 carry a direction as far as half a unit at 0.95 and read 0.125 against 0.075, so the carried distance 1 / (1 - alpha) times the length does not decide it. Built from scratch in NumPy on the same non-centred eight schools potentials, generalised HMC and rank tests: the integrated autocorrelation of log tau and mu per variant instead of the lag-1, a sweep of alpha at three lengths priced at equal gradients, the best few run on enough studies to read against a correct sampler, and the refresh on the centred model. The question is what the band reads that the lag-1 misses, whether one number about a variant predicts its share, and whether partial refresh is right or only past the line",
+      "total_days": 4,
+      "daily_plan": [
+        "What the lag-1 misses - integrated autocorrelation and the spectrum at zero for mu and log tau under the full tree and the five refresh variants of the last project's day 4, on the normal and on eight schools, and whether IACT orders the band shares where lag-1 did not",
+        "The sweep - alpha 0 to 0.98 at a quarter, half and one unit, each thinned to 40 gradients a draw, IACT and the band on log tau and the joint, and whether the share is a function of the carried distance, of IACT, or of neither",
+        "Right or past the line - the best two settings and unit mass at four units on 400 or more studies, against the 0.143 to 0.185 of a correct sampler, with the binomial spread of the rejection share project",
+        "The centred model - the same refresh on centred eight schools, divergences and the band against centred NUTS's 1.00, whether keeping the direction carries a chain through the neck, project README"
+      ]
+    }
+  ]
 }
