@@ -1,7 +1,18 @@
 {
-  "current_project": null,
-  "current_project_day": 0,
-  "current_project_meta": null,
+  "current_project": "how-far-a-direction-is-carried",
+  "current_project_day": 1,
+  "current_project_meta": {
+    "name": "how-far-a-direction-is-carried",
+    "title": "How Far a Direction Is Carried: Partial Refresh Swept and Measured",
+    "description": "Where the tree too long on log tau project breaks, its first and fourth items, with the third as the bar a pass has to clear. Partial momentum refresh fixed log tau where no tree and no mass had: one unit at alpha 0.8 failed log tau on 0.075 of 120 studies against the full tree's 0.367 at the same 40 gradients a draw. But alpha has an optimum that nothing locates, one unit at 0.95 had the lowest lag-1 of all and failed twice as often as 0.8, and two units at 0.8 carry a direction as far as half a unit at 0.95 and read 0.125 against 0.075, so the carried distance 1 / (1 - alpha) times the length does not decide it. Built from scratch in NumPy on the same non-centred eight schools potentials, generalised HMC and rank tests: the integrated autocorrelation of log tau and mu per variant instead of the lag-1, a sweep of alpha at three lengths priced at equal gradients, the best few run on enough studies to read against a correct sampler, and the refresh on the centred model. The question is what the band reads that the lag-1 misses, whether one number about a variant predicts its share, and whether partial refresh is right or only past the line",
+    "total_days": 4,
+    "daily_plan": [
+      "What the lag-1 misses - integrated autocorrelation and the spectrum at zero for mu and log tau under the full tree and the five refresh variants of the last project's day 4, on the normal and on eight schools, and whether IACT orders the band shares where lag-1 did not",
+      "The sweep - alpha 0 to 0.98 at a quarter, half and one unit, each thinned to 40 gradients a draw, IACT and the band on log tau and the joint, and whether the share is a function of the carried distance, of IACT, or of neither",
+      "Right or past the line - the best two settings and unit mass at four units on 400 or more studies, against the 0.143 to 0.185 of a correct sampler, with the binomial spread of the rejection share project",
+      "The centred model - the same refresh on centred eight schools, divergences and the band against centred NUTS's 1.00, whether keeping the direction carries a chain through the neck, project README"
+    ]
+  },
   "completed_projects": [
     {
       "name": "tree-too-long-on-log-tau",
@@ -531,18 +542,5 @@
       ]
     }
   ],
-  "project_queue": [
-    {
-      "name": "how-far-a-direction-is-carried",
-      "title": "How Far a Direction Is Carried: Partial Refresh Swept and Measured",
-      "description": "Where the tree too long on log tau project breaks, its first and fourth items, with the third as the bar a pass has to clear. Partial momentum refresh fixed log tau where no tree and no mass had: one unit at alpha 0.8 failed log tau on 0.075 of 120 studies against the full tree's 0.367 at the same 40 gradients a draw. But alpha has an optimum that nothing locates, one unit at 0.95 had the lowest lag-1 of all and failed twice as often as 0.8, and two units at 0.8 carry a direction as far as half a unit at 0.95 and read 0.125 against 0.075, so the carried distance 1 / (1 - alpha) times the length does not decide it. Built from scratch in NumPy on the same non-centred eight schools potentials, generalised HMC and rank tests: the integrated autocorrelation of log tau and mu per variant instead of the lag-1, a sweep of alpha at three lengths priced at equal gradients, the best few run on enough studies to read against a correct sampler, and the refresh on the centred model. The question is what the band reads that the lag-1 misses, whether one number about a variant predicts its share, and whether partial refresh is right or only past the line",
-      "total_days": 4,
-      "daily_plan": [
-        "What the lag-1 misses - integrated autocorrelation and the spectrum at zero for mu and log tau under the full tree and the five refresh variants of the last project's day 4, on the normal and on eight schools, and whether IACT orders the band shares where lag-1 did not",
-        "The sweep - alpha 0 to 0.98 at a quarter, half and one unit, each thinned to 40 gradients a draw, IACT and the band on log tau and the joint, and whether the share is a function of the carried distance, of IACT, or of neither",
-        "Right or past the line - the best two settings and unit mass at four units on 400 or more studies, against the 0.143 to 0.185 of a correct sampler, with the binomial spread of the rejection share project",
-        "The centred model - the same refresh on centred eight schools, divergences and the band against centred NUTS's 1.00, whether keeping the direction carries a chain through the neck, project README"
-      ]
-    }
-  ]
+  "project_queue": []
 }
